@@ -2,11 +2,11 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
-$screen = Yii::app()->request->getParam('screenID', '1');
-echo $screen;
+$this->layout='//layouts/billboard';
+
 ?>
 <div class="row-fluid" id="TopRow">
-	<div class="span7" id="BuildingPictures">		
+	<div class="span7" id="BuildingPictures">
 		<div id="crossSlide"></div>
 	</div>
 <!--<div class="span4" id="DateTimeWidget">
@@ -24,42 +24,42 @@ echo $screen;
 		<div id="banner-fade">
     		<ul class="bjqs" dir="rtl">
 		        <li>
-					<h1>δεγςδ 1</h1><!-- Any content you like -->
+					<h1>Χ”Χ•Χ“ΧΆΧ” 1</h1><!-- Any content you like -->
 					
-					<h2>γιιψιν ιχψιν ωμεν.</h2>
-					<h2>ΰαχωλν μδςαιψ ΰϊ ϊωμεν ξιρι εεςγ δαιϊ, μωπϊ 2013</h2>
-					<h2>αςωιψι αλμ ηεγω.</h2>
-					<h2>μφεψκ ηιγεω αιθεηιν ηωεαιν.</h2>
-					<h2>ΰϊ δϊωμεν ιω μδςαιψ μεεςγ αγιψεϊ 3 ΰε 16.</h2>
-					<h4>ααψλδ, εεςγ δαιϊ</h4>
+					<h2>Χ“Χ™Χ™Χ¨Χ™Χ Χ™Χ§Χ¨Χ™Χ Χ©ΧΧ•Χ.</h2>
+					<h2>ΧΧ‘Χ§Χ©Χ›Χ ΧΧ”ΧΆΧ‘Χ™Χ¨ ΧΧª ΧªΧ©ΧΧ•Χ ΧΧ™Χ΅Χ™ Χ•Χ•ΧΆΧ“ Χ”Χ‘Χ™Χª, ΧΧ©Χ Χª 2013</h2>
+					<h2>Χ‘ΧΆΧ©Χ™Χ¨Χ™ Χ‘Χ›Χ Χ—Χ•Χ“Χ©.</h2>
+					<h2>ΧΧ¦Χ•Χ¨Χ Χ—Χ™Χ“Χ•Χ© Χ‘Χ™ΧΧ•Χ—Χ™Χ Χ—Χ©Χ•Χ‘Χ™Χ.</h2>
+					<h2>ΧΧª Χ”ΧªΧ©ΧΧ•Χ Χ™Χ© ΧΧ”ΧΆΧ‘Χ™Χ¨ ΧΧ•Χ•ΧΆΧ“ Χ‘Χ“Χ™Χ¨Χ•Χª 3 ΧΧ• 16.</h2>
+					<h4>Χ‘Χ‘Χ¨Χ›Χ”, Χ•Χ•ΧΆΧ“ Χ”Χ‘Χ™Χª</h4>
 				</li>
 		        <li>
-					<h1>δεγςδ 2</h1><!-- Any content you like -->
+					<h1>Χ”Χ•Χ“ΧΆΧ” 2</h1><!-- Any content you like -->
 					
-					<h2>μγιιψιν ωμεν.</h2>
-					<h2>μΰηψ αιχεψϊ εΰζδψδ ωμ λιαει ΰω</h2>
-					<h2>ιω μτπεϊ ΰϊ λμ δητφιν ξηγψ δξγψβεϊ.</h2>
-					<h2>δγαψ ςμεμ μρλο ηιι ΰγν !!!</h2>
-					<h4>ααψλδ, εεςγ δαιϊ</h4>
+					<h2>ΧΧ“Χ™Χ™Χ¨Χ™Χ Χ©ΧΧ•Χ.</h2>
+					<h2>ΧΧΧ—Χ¨ Χ‘Χ™Χ§Χ•Χ¨Χª Χ•ΧΧ–Χ”Χ¨Χ” Χ©Χ Χ›Χ™Χ‘Χ•Χ™ ΧΧ©</h2>
+					<h2>Χ™Χ© ΧΧ¤Χ Χ•Χª ΧΧª Χ›Χ Χ”Χ—Χ¤Χ¦Χ™Χ ΧΧ—Χ“Χ¨ Χ”ΧΧ“Χ¨Χ’Χ•Χª.</h2>
+					<h2>Χ”Χ“Χ‘Χ¨ ΧΆΧΧ•Χ ΧΧ΅Χ›Χ Χ—Χ™Χ™ ΧΧ“Χ !!!</h2>
+					<h4>Χ‘Χ‘Χ¨Χ›Χ”, Χ•Χ•ΧΆΧ“ Χ”Χ‘Χ™Χª</h4>
 				</li>
 				<li>
-					<h1>δεγςδ 3</h1><!-- Any content you like -->
+					<h1>Χ”Χ•Χ“ΧΆΧ” 3</h1><!-- Any content you like -->
 					
-					<h2>γιιψιν ιχψιν ωμεν.</h2>
-					<h2>ηαψϊ δπιδεμ ΰιπδ ΰηψΰιϊ μτιπει τρεμϊ ξηγψ δΰωτδ λβεο:</h2>
-					<h2>ωεμηπεϊ, γμϊεϊ, ζλελιεϊ, χψθεπιν ελε...</h2>
-					<h2>ιεν δτιπει δεΰ ιεν γ'</h2>
-					<h2>ιω μδεφιΰ ΰϊ δτρεμϊ ιεν μτπι.</h2>
-					<h4>ααψλδ, εεςγ δαιϊ</h4>
+					<h2>Χ“Χ™Χ™Χ¨Χ™Χ Χ™Χ§Χ¨Χ™Χ Χ©ΧΧ•Χ.</h2>
+					<h2>Χ—Χ‘Χ¨Χª Χ”Χ Χ™Χ”Χ•Χ ΧΧ™Χ Χ” ΧΧ—Χ¨ΧΧ™Χª ΧΧ¤Χ™Χ Χ•Χ™ Χ¤Χ΅Χ•ΧΧª ΧΧ—Χ“Χ¨ Χ”ΧΧ©Χ¤Χ” Χ›Χ’Χ•Χ:</h2>
+					<h2>Χ©Χ•ΧΧ—Χ Χ•Χª, Χ“ΧΧªΧ•Χª, Χ–Χ›Χ•Χ›Χ™Χ•Χª, Χ§Χ¨ΧΧ•Χ Χ™Χ Χ•Χ›Χ•...</h2>
+					<h2>Χ™Χ•Χ Χ”Χ¤Χ™Χ Χ•Χ™ Χ”Χ•Χ Χ™Χ•Χ Χ“'</h2>
+					<h2>Χ™Χ© ΧΧ”Χ•Χ¦Χ™Χ ΧΧª Χ”Χ¤Χ΅Χ•ΧΧª Χ™Χ•Χ ΧΧ¤Χ Χ™.</h2>
+					<h4>Χ‘Χ‘Χ¨Χ›Χ”, Χ•Χ•ΧΆΧ“ Χ”Χ‘Χ™Χª</h4>
 				</li>
 				<li>
-					<h1>δεγςδ 4</h1><!-- Any content you like -->
+					<h1>Χ”Χ•Χ“ΧΆΧ” 4</h1><!-- Any content you like -->
 					
-					<h2>ξεχγ τπιεϊ: ηαψϊ ςγο πιδεμ εΰηζχδ</h2>
+					<h2>ΧΧ•Χ§Χ“ Χ¤Χ Χ™Χ•Χª: Χ—Χ‘Χ¨Χª ΧΆΧ“Χ Χ Χ™Χ”Χ•Χ Χ•ΧΧ—Χ–Χ§Χ”</h2>
 					
-					<h2>θμτεο: 08-9233033</h2>
+					<h2>ΧΧΧ¤Χ•Χ: 08-9233033</h2>
 				</li>
-		    </ul>
+    		</ul>
 		</div>	
 	</div>	
 </div>
@@ -70,17 +70,17 @@ echo $screen;
 		<div id="ynetNewsScroller" class="sagscroller"></div>
 	</div>	
 </div>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/jdigiclock/lib/jquery.jdigiclock.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jdigiclock/lib/jquery.jdigiclock.js"></script>
 
 	<script type="text/javascript"> <!-- DOM Ready functions (jdigiclock, 
 	    $(document).ready(function() {
 	        $('#digiclock').jdigiclock({
 	            // Configuration goes here
-	            clockImagesPath: 'css/jdigiclock/images/clock/',
-                weatherImagesPath: 'css/jdigiclock/images/weather/',
+	            clockImagesPath: 'js/jdigiclock/images/clock/',
+                weatherImagesPath: 'js/jdigiclock/images/weather/',
                 lang: 'he',
                 am_pm: false,
-                //weatherLocationCode: 'MEA|IL|IS005|HOLON',
+                weatherLocationCode: 'MEA|IL|IS005|HOLON',
                 weatherMetric: 'C'                             
 	        });	  
 			
@@ -109,11 +109,11 @@ echo $screen;
 		*/
 	</script>
 	
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/sagscroller.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/crossSlide.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/sagscroller.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/crossSlide.js"></script>
 
 	<!-- Include the plugin *after* the jQuery library -->
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/css/bjqs.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bjqs.js"></script>
 
 	<!-- Include the basic styles -->
 	<link type="text/css" rel="Stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bjqs.css" charset="UTF-8" />

@@ -14,16 +14,18 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/jdigiclock/css/jquery.jdigiclock.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/sagscroller.css" />
+	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
 
 <div class="container" id="page">
-</div><!-- page -->
+
 	<?php echo $content; ?>
 	
 	<div class="clear"></div>
-</body>
+</div><!-- page --></body>
 </html>
