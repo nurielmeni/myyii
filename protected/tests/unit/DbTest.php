@@ -5,7 +5,10 @@
  * and open the template in the editor.
  */
 
-class MessageTest extends CTestCase
-{
+class DbTest extends CTestCase
+{  
+     public function testConnection()
+     {
+        $this->assertTrue(true);
+     }
 }
-?>
