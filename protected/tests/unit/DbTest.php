@@ -9,6 +9,6 @@ class DbTest extends CTestCase
 {  
      public function testConnection()
      {
-        $this->assertTrue(true);
+        $this->assertTrue(NULL, Yii::app()->db);
      }
 }
