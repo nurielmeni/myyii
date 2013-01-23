@@ -12,7 +12,7 @@ return array(
 	'name'=>'לוח מודעות ממוחשב לבנייני מגורים ומשרדים',
 	
 	'language'=>'he',
-	'theme'=>'bootstrap',
+	'theme'=>'he',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

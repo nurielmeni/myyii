@@ -4,8 +4,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content=<?php echo Yii::app()->language; ?> />
+    
+    <!-- Bootstrap -->
+    <?php Yii::app()->clientScript->registerCoreScript('bootstrap'); ?>	
+	<?php Yii::app()->bootstrap->register(); ?>
 
-	<!-- blueprint CSS framework -->
+	<!-- blueprint CSS framework 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
@@ -16,16 +20,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/jdigiclock/css/jquery.jdigiclock.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/sagscroller.css" />
-	
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body dir="rtl">
 
-<div class="container" id="page">
+<div class="container-fluid" id="page">
 
 	<?php echo $content; ?>
 	
 	<div class="clear"></div>
-</div><!-- page --></body>
+</div><!-- page -->
+</body>
 </html>
