@@ -85,3 +85,6 @@ DELETE CASCADE ON UPDATE RESTRICT;
 ALTER TABLE `tbl_screen_ad_assignment` ADD CONSTRAINT `FK_ad_
 screen` FOREIGN KEY (`ad_id`) REFERENCES `tbl_ad` (`id`) ON 
 DELETE CASCADE ON UPDATE RESTRICT;  
+
+ALTER TABLE `tbl_screen_ad_assignment`
+ADD CONSTRAINT ad_screen_element UNIQUE (`ad_id`, `screen_id`, `element_id`);
