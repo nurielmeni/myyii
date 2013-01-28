@@ -15,7 +15,7 @@
  * The followings are the available model relations:
  * @property Screen[] $screens
  */
-class Client extends CActiveRecord
+class Client extends BillboardActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.

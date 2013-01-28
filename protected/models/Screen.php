@@ -19,7 +19,7 @@
  * @property Monitor $monitor
  * @property Ad[] $tblAds
  */
-class Screen extends CActiveRecord
+class Screen extends BillboardActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.

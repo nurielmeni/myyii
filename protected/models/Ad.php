@@ -16,7 +16,7 @@
  * The followings are the available model relations:
  * @property Screen[] $tblScreens
  */
-class Ad extends CActiveRecord
+class Ad extends BillboardActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.

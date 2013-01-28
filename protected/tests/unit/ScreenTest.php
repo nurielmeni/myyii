@@ -30,6 +30,18 @@ class ScreenTest extends CDbTestCase
         $this->assertTrue(in_array('client1', $clients));
         $this->assertFalse(in_array('client4', $clients));
     }   
+    
+    public function testCreateScreen()
+    {
+        $newScreen = new Screen;
+        $newScreenName = "Screen test 1";
+        $newScreen->setAttributes(array(
+                'name'=>$newScreenName,
+                'description'=>"New screen description.",
+                ));
+        
+    }
+            
 }
    
 ?>

@@ -14,7 +14,7 @@
  * @property string $update_time
  * @property integer $update_user_id
  */
-class User extends CActiveRecord
+class User extends BillboardActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
