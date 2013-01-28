@@ -72,10 +72,10 @@ class Ad extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'description' => 'Description',
-			'html' => 'Html',
+			'id' => 'מספר',
+			'name' => 'שם',
+			'description' => 'תיאור',
+			'html' => 'תוכן דף',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',

@@ -70,10 +70,10 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'email' => 'Email',
-			'username' => 'Username',
-			'password' => 'Password',
+			'id' => 'מספר',
+			'email' => 'אי-מייל',
+			'username' => 'שם משתמש',
+			'password' => 'סיסמה',
 			'last_login_time' => 'Last Login Time',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',

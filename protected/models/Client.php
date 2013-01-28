@@ -51,7 +51,7 @@ class Client extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, os, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
-			array('name, description', 'required'),
+			array('name, os', 'required'),
                     );
 	}
 
@@ -73,9 +73,9 @@ class Client extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'os' => 'Os',
+			'id' => 'מספר',
+			'name' => 'שם',
+			'os' => 'מערכת הפעלה',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',

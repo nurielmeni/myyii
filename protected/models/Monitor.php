@@ -72,9 +72,9 @@ class Monitor extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'size' => 'Size',
+			'id' => 'מספר',
+			'name' => 'שם',
+			'size' => 'גודל',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',

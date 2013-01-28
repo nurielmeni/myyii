@@ -24,11 +24,17 @@ $this->menu=array(
 		'id',
 		'name',
 		'description',
-		'monitor_id',
-		'client_id',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
+		array(
+            'name'=>'monitor_id',
+            'value'=>  $data->monitor->name
+        ),
+		array(
+            'name'=>'client_id',
+            'value'=>  $data->client->name
+        ),	
+		//'create_time',
+		//'create_user_id',
+		//'update_time',
+		//'update_user_id',
 	),
 )); ?>

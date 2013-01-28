@@ -78,11 +78,11 @@ class Screen extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'description' => 'Description',
-			'monitor_id' => 'Monitor',
-			'client_id' => 'Client',
+			'id' => 'מספר',
+			'name' => 'שם',
+			'description' => 'תיאור',
+			'monitor_id' => 'מסך',
+			'client_id' => 'מחשב',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',
@@ -133,5 +133,4 @@ class Screen extends CActiveRecord
     {       
         return CHtml::listData(Client::model()->findAll(), 'id', 'name');
     }
-
 }

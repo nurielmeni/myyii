@@ -29,9 +29,7 @@ class ScreenTest extends CDbTestCase
         $this->assertTrue(is_array($clients));
         $this->assertTrue(in_array('client1', $clients));
         $this->assertFalse(in_array('client4', $clients));
-    }
-
-   
+    }   
 }
    
 ?>

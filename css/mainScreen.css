@@ -1,18 +1,25 @@
+html
+{
+	height: 98%;
+	overflow: hidden;
+}
 body
 {
 	margin: 0;
-	padding: 0;
+	padding-bottom: 5px;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	height: 100%;	
+    background: white url(../images/BackgroundColor.png);
 }
 
 #page
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
+	margin-top: 1%;
+	margin-bottom: 1%;	
+	width: auto;
+    height: 100%;
+    background: white url(../images/BackgroundColor.png);
 }
 
 #header
@@ -24,7 +31,9 @@ body
 
 #content
 {
-    padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    height: 100%;
 }
 
 #sidebar
@@ -226,4 +235,109 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.span2, .span4, .span8
+{
+	height: 96%;
+}
+
+#TopRow
+{
+	margin-right: -10px;
+	height: 28%;
+}
+
+.row-fluid .carousel-caption
+{
+	direction: rtl;
+}
+
+.container-fluid .row-fluid .span2 .span4 .span8
+{
+    height: 100%;
+}
+
+.bjqs-markers
+{
+    visibility: hidden;
+}
+
+#MiddleRow
+{
+	margin-right: -10px;
+	height: 48%;
+}
+
+#BottomRow
+{
+	margin-right: -10px;
+	height: 24%;
+}
+#BuildingPictures, #WhetherWidget, #DateTimeWidget, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
+{
+}
+
+#BuildingPictures
+{
+	border-color: #CCFFFF;
+	height: 100%;
+}
+
+#WhetherWidget
+{
+	border-color: #A3CCCC;
+}
+
+#DateTimeWidget
+{
+	border-color: #D6FFAD;
+}
+
+#crossSlide
+{
+	height: 100%;
+	width: 100%;
+}
+
+#crossSlide img
+{
+	max-width: none;
+}
+
+#Adds1
+{
+	border-color: #CCFFFF;
+}
+
+#Adds2
+{
+	border-color: #D6FFAD;
+}
+
+#Billboard
+{
+	border-color: #CCFFFF;
+}
+
+#Adds3
+{
+	border-color: #D6FFAD;
+}
+
+#YnetWidget
+{
+	border-color: #A3CCCC;
+}
+
+#YnetWidget ul li .rssContent
+{
+	float: right;
+}
+
+#digiclock
+{
+	height: 100%;
+	width:	100%;
+	display: inline-block;
 }
