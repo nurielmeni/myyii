@@ -1979,3 +1979,103 @@ Stack trace:
 REQUEST_URI=/myyii/index.php?r=client/create
 HTTP_REFERER=http://localhost/myyii/index.php?r=client/create
 ---
+2013/01/29 09:43:55 [error] [exception.CException] exception 'CException' with message 'הערך "Ad.contractData" לא הוגדר.' in X:\yii-1.1.13.e9e4a0\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\db\ar\CActiveRecord.php(143): CComponent->__get('contractData')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('contractData')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\helpers\CHtml.php(1417): CHtml::resolveValue(Object(Ad), 'contractData')
+#3 X:\GIT\myyii\protected\extensions\tinymce\ETinyMce.php(870): CHtml::activeTextArea(Object(Ad), 'contractData', Array)
+#4 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(173): ETinyMce->run()
+#5 X:\GIT\myyii\protected\views\ad\_form.php(40): CBaseController->widget('application.ext...', Array)
+#6 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#7 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#8 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#9 X:\GIT\myyii\protected\views\ad\create.php(18): CController->renderPartial('_form', Array)
+#10 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#11 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#12 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#13 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 X:\GIT\myyii\protected\controllers\AdController.php(79): CController->render('create', Array)
+#15 X:\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): AdController->actionCreate()
+#16 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 X:\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#23 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('create')
+#25 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('ad/create')
+#26 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 X:\GIT\myyii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/myyii/index.php?r=ad/create
+HTTP_REFERER=http://localhost/myyii/index.php?r=ad
+---
+2013/01/29 10:18:57 [error] [exception.CException] exception 'CException' with message 'הערך "ETinyMce.file_browser_callback" לא הוגדר.' in X:\yii-1.1.13.e9e4a0\framework\base\CComponent.php:173
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CWidgetFactory.php(161): CComponent->__set('file_browser_ca...', 'filebrowser')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(AdController), 'application.ext...', Array)
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 X:\GIT\myyii\protected\views\ad\_form.php(41): CBaseController->widget('application.ext...', Array)
+#4 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#5 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#6 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#7 X:\GIT\myyii\protected\views\ad\create.php(18): CController->renderPartial('_form', Array)
+#8 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#9 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#10 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#11 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 X:\GIT\myyii\protected\controllers\AdController.php(79): CController->render('create', Array)
+#13 X:\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): AdController->actionCreate()
+#14 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 X:\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#21 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('create')
+#23 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('ad/create')
+#24 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 X:\GIT\myyii\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/myyii/index.php?r=ad/create
+HTTP_REFERER=http://localhost/myyii/index.php?r=ad
+---
+2013/01/29 10:28:46 [error] [exception.CException] exception 'CException' with message 'הערך "Ad.tinymce" לא הוגדר.' in X:\yii-1.1.13.e9e4a0\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\db\ar\CActiveRecord.php(143): CComponent->__get('tinymce')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('tinymce')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\helpers\CHtml.php(1417): CHtml::resolveValue(Object(Ad), 'tinymce')
+#3 X:\GIT\myyii\protected\extensions\tinymce\ETinyMce.php(870): CHtml::activeTextArea(Object(Ad), 'tinymce', Array)
+#4 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(173): ETinyMce->run()
+#5 X:\GIT\myyii\protected\views\ad\_form.php(52): CBaseController->widget('application.ext...', Array)
+#6 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#7 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#8 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#9 X:\GIT\myyii\protected\views\ad\create.php(18): CController->renderPartial('_form', Array)
+#10 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require('X:\GIT\myyii\pr...')
+#11 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\GIT\myyii\pr...', Array, true)
+#12 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): CBaseController->renderFile('X:\GIT\myyii\pr...', Array, true)
+#13 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 X:\GIT\myyii\protected\controllers\AdController.php(79): CController->render('create', Array)
+#15 X:\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): AdController->actionCreate()
+#16 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 X:\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 X:\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#23 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('create')
+#25 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('ad/create')
+#26 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 X:\GIT\myyii\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/myyii/index.php?r=ad/create
+HTTP_REFERER=http://localhost/myyii/index.php?r=ad
+---

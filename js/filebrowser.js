@@ -1,4 +1,4 @@
-﻿function filebrowser(field_name, url, type, win) {
+function filebrowser(field_name, url, type, win) {
     
     fileBrowserURL = "/myyii/pdw_file_browser/index.php?editor=tinymce&filter=" + type;
       
