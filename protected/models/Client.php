@@ -44,10 +44,10 @@ class Client extends BillboardActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name, os', 'required'),
-			array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			//array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>128),
 			array('os', 'length', 'max'=>64),
-			array('create_time, update_time', 'safe'),
+			//array('create_time, update_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, os, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),

@@ -44,9 +44,9 @@ class Ad extends BillboardActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			//array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>128),
-			array('description, html, create_time, update_time', 'safe'),
+			array('description, html', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, description, html, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),

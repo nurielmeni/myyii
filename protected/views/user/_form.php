@@ -32,6 +32,12 @@
 		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
+    
+    <div class="row">
+        <?php echo $form->label($model,'password_repeat'); ?>
+        <?php echo $form->passwordField($model,'password_repeat',array('size'=>60,'maxlength'=>128)); ?>
+        <?php echo $form->error($model,'password_repeat'); ?>
+    </div>
 
 	
 

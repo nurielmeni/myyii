@@ -26,6 +26,11 @@ class User extends BillboardActiveRecord
 		return parent::model($className);
 	}
 
+    /**     
+     * @password_repeat
+     */
+    public $password_repeat;
+    
 	/**
 	 * @return string the associated database table name
 	 */
@@ -42,14 +47,17 @@ class User extends BillboardActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email', 'required'),
-			array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			array('email, username, password', 'required'),
+			//array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
 			array('email', 'length', 'max'=>256),
 			array('username, password', 'length', 'max'=>128),
-			array('last_login_time, create_time, update_time', 'safe'),
+            array('password', 'compare'),
+            array('email, username', 'unique'),
+            array('password_repeat', 'safe'),
+			//array('last_login_time, create_time, update_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, email, username, password, last_login_time, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
+			array('id, email, username, password, last_login_time, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),            
 		);
 	}
 
@@ -74,6 +82,7 @@ class User extends BillboardActiveRecord
 			'email' => 'אי-מייל',
 			'username' => 'שם משתמש',
 			'password' => 'סיסמה',
+            'password_repeat' => 'חזור על סיסמה',
 			'last_login_time' => 'Last Login Time',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
@@ -107,4 +116,17 @@ class User extends BillboardActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+    
+    /**
+    * perform one-way encryption on the password before we store it in the database
+    */
+    protected function afterValidate()
+    {
+        parent::afterValidate();
+        $this->password = $this->encrypt($this->password);                     
+    }
+    public function encrypt($value)
+    {
+        return md5($value);
+    }
 }

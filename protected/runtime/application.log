@@ -2079,3 +2079,13 @@ Stack trace:
 REQUEST_URI=/myyii/index.php?r=ad/create
 HTTP_REFERER=http://localhost/myyii/index.php?r=ad
 ---
+2013/01/29 11:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "XDEBUG_SESSION_START=netbeans-xdebug".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('XDEBUG_SESSION_...')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('XDEBUG_SESSION_...')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('user/XDEBUG_SES...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/index.php?r=user/XDEBUG_SESSION_START=netbeans-xdebug
+---

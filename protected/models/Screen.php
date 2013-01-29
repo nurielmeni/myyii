@@ -48,9 +48,9 @@ class Screen extends BillboardActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('monitor_id, client_id, create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			array('monitor_id, client_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>128),
-			array('description, create_time, update_time', 'safe'),
+			array('description', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, description, monitor_id, client_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
