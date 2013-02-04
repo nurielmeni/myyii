@@ -33,6 +33,17 @@ You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&g
 or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
 
+<?php if(Yii::app()->user->hasFlash('success')):?>
+     <div class="flash-success">
+          <?php echo Yii::app()->user->getFlash('success'); ?>
+     </div>
+<?php endif; ?>
+<?php if(Yii::app()->user->hasFlash('error')):?>
+     <div class="flash-error">
+          <?php echo Yii::app()->user->getFlash('error'); ?>
+     </div>
+<?php endif; ?>
+
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(

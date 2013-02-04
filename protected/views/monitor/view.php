@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'List Monitor', 'url'=>array('index')),
 	array('label'=>'Create Monitor', 'url'=>array('create')),
 	array('label'=>'Update Monitor', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Monitor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Delete Monitor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id), 'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Monitor', 'url'=>array('admin')),
 );
 ?>

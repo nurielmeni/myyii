@@ -26,11 +26,11 @@ $this->menu=array(
 		'description',
 		array(
             'name'=>'monitor_id',
-            'value'=>  $data->monitor->name
+            'value'=>  $model->monitor->name
         ),
 		array(
             'name'=>'client_id',
-            'value'=>  $data->client->name
+            'value'=>  $model->client->name
         ),	
 		//'create_time',
 		//'create_user_id',

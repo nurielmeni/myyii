@@ -4,7 +4,17 @@
 ?>
 
 <div class="view">
-
+    <?php if(Yii::app()->user->hasFlash('success')):?>
+         <div class="flash-success">
+              <?php echo Yii::app()->user->getFlash('success'); ?>
+         </div>
+    <?php endif; ?>
+    <?php if(Yii::app()->user->hasFlash('error')):?>
+         <div class="flash-error">
+              <?php echo Yii::app()->user->getFlash('error'); ?>
+         </div>
+    <?php endif; ?>
+    
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />

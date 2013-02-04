@@ -37,7 +37,7 @@ class ScreenController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('nurielmeni'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -110,12 +110,21 @@ class ScreenController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
-
+        try 
+        {      
+            $this->loadModel($id)->delete();
+            Yii::app()->user->setFlash('seccess', 'The screen has deleted successfuly.');
+        }
+        catch (CDbException $e)
+        {
+            Yii::app()->user->setFlash('error', $e->getMessage());
+        }
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+       
 	}
+    
 
 	/**
 	 * Lists all models.

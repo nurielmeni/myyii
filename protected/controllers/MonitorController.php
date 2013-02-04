@@ -37,7 +37,7 @@ class MonitorController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('nurielmeni'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -110,7 +110,16 @@ class MonitorController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		
+        try 
+        {      
+            $this->loadModel($id)->delete();
+            Yii::app()->user->setFlash('success', 'The monitor has been deleted successfuly.');
+        }
+        catch (CDbException $e)
+        {
+            Yii::app()->user->setFlash('error', 'Could not delete the requested Monitor\nit might have associated screens.');
+        }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
