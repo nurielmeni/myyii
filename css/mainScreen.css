@@ -245,7 +245,7 @@ div.search-form
 #TopRow
 {
 	margin-right: -10px;
-	height: 28%;
+	height: 37%;
 }
 
 .row-fluid .carousel-caption
@@ -266,13 +266,13 @@ div.search-form
 #MiddleRow
 {
 	margin-right: -10px;
-	height: 48%;
+	height: 39%;
 }
 
 #BottomRow
 {
 	margin-right: -10px;
-	height: 24%;
+	height: 34%;
 }
 #BuildingPictures, #WhetherWidget, #DateTimeWidget, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
 {

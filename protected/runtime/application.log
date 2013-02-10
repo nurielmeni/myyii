@@ -2727,3 +2727,102 @@ Stack trace:
 REQUEST_URI=/myyii/monitor/11
 HTTP_REFERER=http://localhost/myyii/monitor/create
 ---
+2013/02/10 23:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/index.php?r=monitor/create
+---
+2013/02/10 23:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/10 23:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:17:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:23:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:35:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
+2013/02/11 00:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "images/BackgroundColor.png".' in D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WWW\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('images/Backgrou...')
+#1 D:\WWW\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WWW\yii\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/images/BackgroundColor.png
+HTTP_REFERER=http://my.yii/myyii/site
+---
