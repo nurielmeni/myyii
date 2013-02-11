@@ -118,7 +118,7 @@ class MonitorController extends Controller
         }
         catch (CDbException $e)
         {
-            Yii::app()->user->setFlash('error', 'Could not delete the requested Monitor\nit might have associated screens.');
+            Yii::app()->user->setFlash('error', 'Could not delete the requested Monitor. It might have associated screens.');
         }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
