@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 13, 2013 at 12:57 PM
+-- Generation Time: Feb 13, 2013 at 01:22 PM
 -- Server version: 5.5.25a
 -- PHP Version: 5.4.4
 
@@ -21,24 +21,50 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
 --
--- Table structure for table `tbl_yeshuvim`
+-- Table structure for table `tbl_province`
 --
+DROP TABLE IF EXISTS `tbl_province`;
 
-CREATE TABLE IF NOT EXISTS `tbl_yeshuvim` (
+CREATE TABLE `tbl_province`(
   `id` int(4) DEFAULT NULL,
-  `name_heb` varchar(35) DEFAULT NULL,
-  `name_eng` varchar(23) DEFAULT NULL,
+  `name_heb` varchar(35) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_eng` varchar(23) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tbl_province`
+--
+INSERT INTO `tbl_province` (`id`, `name_heb`, `name_eng`) VALUES
+(1, 'ירושלים', 'Jerusalem'),
+(2, 'צפון', 'North'),
+(3, 'חיפה', 'Haifa'),
+(4, 'מרכז', 'Center'),
+(5, 'תל אביב', 'Tel Aviv'),
+(6, 'דרום', 'South'),
+(7, 'יהודה ושומרון', 'Yehuda Shomron');
+
+--
+-- Table structure for table `tbl_yeshuv`
+--
+DROP TABLE IF EXISTS `tbl_yeshuv`;
+CREATE TABLE `tbl_yeshuv`(
+  `id` int(4) DEFAULT NULL,
+  `name_heb` varchar(35) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_eng` varchar(23) COLLATE utf8_unicode_ci DEFAULT NULL,
   `province_id` int(1) DEFAULT NULL,
-  `population` int(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `population` int(6) DEFAULT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (province_id) REFERENCES tbl_province(id)
+                      ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tbl_yeshuvim`
+-- Dumping data for table `tbl_yeshuv`
 --
 
-INSERT INTO `tbl_yeshuvim` (`id`, `name_heb`, `name_eng`, `province_id`, `population`) VALUES
+INSERT INTO `tbl_yeshuv` (`id`, `name_heb`, `name_eng`, `province_id`, `population`) VALUES
 (2610, 'בית שמש', 'BET SHEMESH', 1, 84209),
 (1015, 'מבשרת ציון', 'MEVASSERET ZIYYON', 1, 25305),
 (1113, 'צור הדסה', 'ZUR HADASSA', 1, 6517),
