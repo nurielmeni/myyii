@@ -32,6 +32,10 @@ $this->menu=array(
             'name'=>'client_id',
             'value'=>  $model->client->name
         ),	
+		array(
+            'name'=>'yeshuv_id',
+            'value'=>  $model->getYeshuv()
+        ),	
 		//'create_time',
 		//'create_user_id',
 		//'update_time',

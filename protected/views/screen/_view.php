@@ -31,6 +31,10 @@
 	<?php echo CHtml::encode($data->monitor->name); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('yeshuv_id')); ?>:</b>
+	<?php echo CHtml::encode($data->getYeshuv()); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('client_id')); ?>:</b>
 	<?php echo CHtml::encode($data->client->name); ?>
 	<br />

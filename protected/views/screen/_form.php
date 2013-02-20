@@ -39,6 +39,42 @@
 		<?php echo $form->error($model,'client_id'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'yeshuv_id'); ?>
+		<?php echo $form->dropDownList($model, 'yeshuv_id', $model->getYeshuvs()) ?>
+        <?php /*$this->widget('zii.widgets.jui.CJuiAutoComplete',array(
+                    'name'=>'name_heb',
+                    'value'=>$model->yeshuv_id,
+                    'source'=>Yii::app()->baseUrl.'/screen/getYeshuvs',
+                    // additional javascript options for the autocomplete plugin
+                    'options'=>array(
+                        'minLength'=>'1',
+                        'showAnim'=>'fold',
+                        //focus option will tell what is displayed in field during the selection
+                        'focus'=> 'js:function( event, ui ) {
+                            $( "#name_heb" ).val( ui.item.postalcode );
+                            return false;
+                        }',
+                        //select function will tell where go each field
+                        'select'=>'js:function( event, ui ) {
+                            $( "#name_heb" ).val( ui.item.name_heb );
+                            $( "#id" ).val(ui.item.id);
+                            return false;
+                        }'
+                            ),
+                            'htmlOptions'=>array(
+                         ),
+            ));
+            Yii::app()->clientScript->registerScript('input', '
+                $("#name_heb").data("autocomplete")._renderItem = function( ul, item ) {
+                return $( "<li></li>" )
+                .data( "item.autocomplete", item )
+                .append( "<a>"+ item.name_heb+"</a>")
+                .appendTo( ul );
+                };');*/?>
+		<?php echo $form->error($model,'yeshuv_id'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

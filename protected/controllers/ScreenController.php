@@ -28,7 +28,7 @@ class ScreenController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','getYeshuvs'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -179,4 +179,24 @@ class ScreenController extends Controller
 			Yii::app()->end();
 		}
 	}
+    
+ 	/**
+	 * Returns the data to the autocomplete widget (Yeshuvim)
+	 *
+	 */
+	public function actionGetYeshuvs()
+	{
+	  if (!empty($_GET['term'])) {
+		$sql = 'SELECT id, name_heb FROM tbl_yeshuv WHERE name_heb LIKE :qterm ';
+		$sql .= ' ORDER BY name_heb';
+		$command = Yii::app()->db->createCommand($sql);
+		$qterm = '%'.$_GET['term'].'%';
+		$command->bindParam(":qterm", $qterm, PDO::PARAM_STR);
+		$result = $command->queryAll();
+		echo CJSON::encode($result); exit;
+	  } else {
+		return false;
+	  }
+	}
+   
 }

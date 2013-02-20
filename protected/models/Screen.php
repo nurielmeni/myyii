@@ -84,8 +84,8 @@ class Screen extends BillboardActiveRecord
 			'description' => 'תיאור',
 			'monitor_id' => 'מסך',
 			'client_id' => 'מחשב',
-                        '$yeshuv_id' => 'ישוב',
-                        'create_time' => 'Create Time',
+            '$yeshuv_id' => 'ישוב',
+            'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',
 			'update_user_id' => 'Update User',
@@ -136,4 +136,33 @@ class Screen extends BillboardActiveRecord
     {       
         return CHtml::listData(Client::model()->findAll(), 'id', 'name');
     }
+    
+     /**
+     * Retrievs the data for the Monitors combobox
+     * @return List of Yeshuvim from Yeshuv.
+     */
+    public function getYeshuvs()
+    {       
+        $sql='SELECT id, name_heb FROM tbl_yeshuv ORDER BY name_heb';
+        $connection=Yii::app()->db;
+        $command=$connection->createCommand($sql);
+        $results=$command->queryAll();  
+        
+        return CHtml::listData($results, 'id', 'name_heb');
+    }
+
+     /**
+     * Retrievs the data for the Monitors combobox
+     * @return List of Yeshuvim from Yeshuv.
+     */
+    public function getYeshuv()
+    {       
+        $sql='SELECT name_heb FROM tbl_yeshuv WHERE id = '.$this->yeshuv_id;
+        $connection=Yii::app()->db;
+        $command=$connection->createCommand($sql);
+        $results=$command->queryRow();  
+        
+        return $results['name_heb'];
+    }
+
 }
