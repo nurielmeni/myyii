@@ -49,13 +49,13 @@ class Screen extends BillboardActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('monitor_id, client_id, $yeshuv_id', 'numerical', 'integerOnly'=>true),
+			array('monitor_id, client_id, yeshuv_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>128),
 			array('description', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, description, monitor_id, client_id, $yeshuv_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
-                        array('name, monitor_id, client_id', 'required')
+			array('id, name, description, monitor_id, client_id, yeshuv_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
+            array('name, monitor_id, client_id, yeshuv_id', 'required')
 		);
 	}
 
@@ -84,7 +84,7 @@ class Screen extends BillboardActiveRecord
 			'description' => 'תיאור',
 			'monitor_id' => 'מסך',
 			'client_id' => 'מחשב',
-            '$yeshuv_id' => 'ישוב',
+            'yeshuv_id' => 'יישוב',
             'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',
 			'update_time' => 'Update Time',

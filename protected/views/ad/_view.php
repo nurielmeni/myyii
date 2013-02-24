@@ -19,8 +19,5 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('html')); ?>:</b>
 	<?php echo CHtml::encode($data->html); ?>
-	<br />
-
-	
-
-</div>
+	<br />    
+ </div>

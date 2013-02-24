@@ -24,9 +24,5 @@ $this->menu=array(
 		'id',
 		'name',
 		'os',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
 	),
 )); ?>
