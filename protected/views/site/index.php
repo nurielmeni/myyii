@@ -23,33 +23,18 @@ $this->layout='//layouts/billboard';
 	<div class="span8" id="Billboard">	
 		<div id="banner-fade">
     		<ul class="bjqs" dir="rtl">
-		        <li>
-					<h2>הודעה 1</h2><!-- Any content you like -->
-					
-					<h3>דיירים יקרים שלום.</h3>
-					<h3>אבקשכם להעביר את תשלום מיסי וועד הבית, לשנת 2013</h3>
-					<h3>בעשירי בכל חודש.</h3>
-					<h3>בברכה, וועד הבית</h3>
-				</li>
-		        <li>
-					<h2>הודעה 2</h2><!-- Any content you like -->
-					
-					<h3>לדיירים שלום.</h3>
-					<h3>בברכה, וועד הבית</h3>
-				</li>
-				<li>
-					<h2>הודעה 3</h2><!-- Any content you like -->
-					
-					<h3>דיירים יקרים שלום.</h3>
-					<h3>בברכה, וועד הבית</h3>
-				</li>
-				<li>
-					<h2>הודעה 4</h2><!-- Any content you like -->
-					
-					<h3>מוקד פניות: חברת עדן ניהול ואחזקה</h3>
-					
-					<h3>טלפון: 08-9233033</h3>
-				</li>
+                
+                <?php
+                foreach ($model as $ad)
+                {
+                  echo CHtml::openTag('li');
+                  echo CHtml::decode($ad->html);
+                  echo CHtml::closeTag('li');
+                }
+                ?>
+                
+                
+
     		</ul>
 		</div>	
 	</div>	
@@ -84,20 +69,7 @@ $this->layout='//layouts/billboard';
 		    });      
 	    });
 
-	    /* The function scroll will scroll the selected element
-		var i = 0
-	    var speed = 1;
-	    function scroll() {
-	        i = i + speed
-	        var div = document.getElementById("rssincl-box-524105")
-	        div.scrollTop = i
-	        if (i > div.scrollHeight - 80) {
-	            i = 0 
-	         }
-	         t1 = setTimeout("scroll()", 80);
-	    }
-	    scroll()
-		*/
+	   
 	</script>
 	
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/sagscroller.js"></script>

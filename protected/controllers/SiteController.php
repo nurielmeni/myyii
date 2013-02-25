@@ -33,10 +33,18 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-                $screen_id = Yii::app()->request->getParam('screenID',1);
+        $screen_id = Yii::app()->request->getParam('screenID',1);
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+        
+        // Gets the screen model 
+        //$model = $this->loadModel($screen_id);
+        
+        $model = Ad::model()->findAll();
+        $dataProvider = new CActiveDataProvider('Ad');
+		$this->render('index', array(
+			'model'=>$model,
+		));
 	}
 
 	/**
@@ -112,5 +120,20 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+    
+    /**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer $id the ID of the model to be loaded
+	 * @return Screen the loaded model
+	 * @throws CHttpException
+	 */
+	public function loadModel($id)
+	{
+		$model=Ad::model()->findAllByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 }

@@ -24,6 +24,10 @@ $this->menu=array(
 		'id',
 		'name',
 		'description',
-		'html',
+		array(
+            'name'=>$model->getAttributeLabel('html'),
+            'type'=>'html',
+            'value'=>CHtml::decode($model->html),
+        ),
 	),
 )); ?>

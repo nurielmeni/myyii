@@ -4851,3 +4851,2172 @@ REQUEST_URI=/myyii/ad/1
 in X:\GIT\myyii\protected\views\ad\view.php (22)
 in X:\GIT\myyii\protected\controllers\AdController.php (56)
 in X:\GIT\myyii\index.php (13)
+2013/02/25 15:19:41 [error] [php] Invalid argument supplied for foreach() (X:\yii-1.1.13.e9e4a0\framework\web\helpers\CHtml.php:2324)
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(126): require()
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(869): SiteController->renderFile()
+#3 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(782): SiteController->renderPartial()
+#4 X:\GIT\myyii\protected\controllers\SiteController.php(47): SiteController->render()
+#5 X:\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(286): SiteController->runAction()
+#8 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): SiteController->run()
+#10 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 X:\GIT\myyii\index.php(13): CWebApplication->run()
+REQUEST_URI=/myyii/site/index
+in X:\GIT\myyii\protected\views\site\index.php (32)
+in X:\GIT\myyii\protected\controllers\SiteController.php (47)
+in X:\GIT\myyii\index.php (13)
+2013/02/25 15:26:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/aja...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/5.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/5.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/3.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/3.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/6.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/6.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/7.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/7.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/9.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/9.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/2.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/2.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/10....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/10.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/11....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/11.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/13....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/13.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "lib".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('lib')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('lib')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/lib/proxy/...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/lib/proxy/php/proxy.php?location=MEA|IL|IS005|HOLON&metric=1
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/4.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/4.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/12....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/12.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_left.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_right.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/1.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/1.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/8.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/8.jpg
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/5.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-1.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/5-1.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-2.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/5-2.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-3.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/5-3.png
+HTTP_REFERER=http://localhost/myyii/site/index
+---
+2013/02/25 15:26:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "index/view".' in X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('index/view')
+#1 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 X:\GIT\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/index/1
+---
+2013/02/25 15:27:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'לא ניתן לאתר את הנתיב המבוקש "index".' in X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 X:\GIT\myyii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myyii/index/
+---
+2013/02/25 15:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/1.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/1.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/3.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/3.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/aja...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/2.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/2.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/4.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/4.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/5.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/5.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/6.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/6.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/7.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/7.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "lib".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('lib')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('lib')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/lib/proxy/...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/lib/proxy/php/proxy.php?location=MEA|IL|IS005|HOLON&metric=1
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/9.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/9.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/8.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/8.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/10....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/10.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/11....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/11.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/13....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/13.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/12....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/12.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_left.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_right.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:27:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "lib".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('lib')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('lib')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/lib/proxy/...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/lib/proxy/php/proxy.php?location=MEA|IL|IS005|HOLON&metric=1
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/aja...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/4.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/4.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/1.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/1.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/2.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/2.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/3.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/3.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/6.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/6.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/7.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/7.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/5.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/5.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/8.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/8.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/9.j...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/9.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/10....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/10.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/11....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/11.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/13....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/13.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/12....')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/12.jpg
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_left.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "images".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('images')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('images')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ico...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/images/icon_right.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/7-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:28:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/21-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/8-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/9.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/9.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/9-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/9-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/9-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/0.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/0.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/0-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/0-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/0-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg5.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg4.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/31-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg6.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1-3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1-2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/1-1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/3.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/2.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
+2013/02/25 15:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'המערכת לא הצליחה לאתר פעולה בשם "js".' in X:\yii-1.1.13.e9e4a0\framework\web\CController.php:483
+Stack trace:
+#0 X:\yii-1.1.13.e9e4a0\framework\web\CController.php(270): CController->missingAction('js')
+#1 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('js')
+#2 X:\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jdigicl...')
+#3 X:\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 X:\GIT\myyii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/myyii/site/js/jdigiclock/images/clock/clockbg1.png
+HTTP_REFERER=http://localhost/myyii/site/
+---
