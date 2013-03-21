@@ -13,9 +13,11 @@
 
 
 (function($) {
-    $.fn.extend({
-
+   //var baseUrl = window.location.protocol + "://" + window.location.host;
+   $.fn.extend({
         jdigiclock: function(options) {
+            
+            //var baseUrl = window.location.protocol + "://" + window.location.host;
 
             var defaults = {
                 clockImagesPath: 'images/clock/',
@@ -289,7 +291,7 @@
             break;
         }
 
-        $.getJSON('lib/proxy/' + proxy + '?location=' + el.weatherLocationCode + '&metric=' + el.weatherMetric, function(data) {
+        $.getJSON(bas + '/lib/proxy/' + proxy + '?location=' + el.weatherLocationCode + '&metric=' + el.weatherMetric, function(data) {
 
             el.find('#weather .loading, #forecast_container .loading').hide();
 
