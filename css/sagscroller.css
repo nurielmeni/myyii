@@ -6,15 +6,15 @@ width: 100%;  /*default width of scroller*/
 height:100%;
 overflow:hidden;
 position:relative;
-//border:4px solid #A3CCCC;
-//border-radius: 8px; /*css3 round corners*/
-//-moz-border-radius: 8px; /*css3 round corners*/
-//-webkit-border-radius: 8px; /*css3 round corners*/
+/*border:4px solid #A3CCCC;
+border-radius: 8px; 
+moz-border-radius: 8px; 
+-webkit-border-radius: 8px; */
 }
 
 #ynetNewsScroller{
 font-family: Vendera,Ariel,sans-serif;
-font-size: 28px;
+font-size: 22px;
 }
 
 .sagscroller a{

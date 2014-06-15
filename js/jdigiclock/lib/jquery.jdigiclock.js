@@ -13,18 +13,16 @@
 
 
 (function($) {
-   //var baseUrl = window.location.protocol + "://" + window.location.host;
-   $.fn.extend({
+    $.fn.extend({
+
         jdigiclock: function(options) {
-            
-            //var baseUrl = window.location.protocol + "://" + window.location.host;
 
             var defaults = {
                 clockImagesPath: 'images/clock/',
                 weatherImagesPath: 'images/weather/',
                 lang: 'en',
                 am_pm: false,
-                weatherLocationCode: 'MEA|IL|IS005|HOLON',
+                weatherLocationCode: 'EUR|BG|BU002|BOURGAS',
                 weatherMetric: 'C',
                 weatherUpdate: 0,
                 proxyType: 'php'
@@ -32,10 +30,15 @@
             };
 
             var regional = [];
+            regional['en'] = {
+                monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                dayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+            };
             regional['he'] = {
-                monthNames: ['בינואר', 'בפברואר', 'במרץ', 'באפריל', 'במאי', 'ביוני', 'ביולי', 'באוגוסט', 'בספטמבר', 'באוקטובר', 'בנובמבר', 'בדצמבר'],
+                monthNames: ['ינארו', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
                 dayNames: ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת']
-            }
+            };
+
 
 
             var options = $.extend(defaults, options);
@@ -291,21 +294,21 @@
             break;
         }
 
-        $.getJSON(bas + '/lib/proxy/' + proxy + '?location=' + el.weatherLocationCode + '&metric=' + el.weatherMetric, function(data) {
+        $.getJSON('lib/proxy/' + proxy + '?location=' + el.weatherLocationCode + '&metric=' + el.weatherMetric, function(data) {
 
             el.find('#weather .loading, #forecast_container .loading').hide();
 
             var curr_temp = '<p class="temp">' + data.curr_temp + '&deg;<span class="metric">' + metric + '</span></p>';
 
             el.find('#weather').css('background','url(' + el.weatherImagesPath + data.curr_icon + '.png) 50% 100% no-repeat');
-            var weather = '<div id="local"><p class="city">' + 'מרכז הארץ' + '</p><p>' + data.curr_text + '</p></div>';
+            var weather = '<div id="local"><p class="city">' + data.city + '</p><p>' + data.curr_text + '</p></div>';
             weather += '<div id="temp"><p id="date">' + el.currDate + '</p>' + curr_temp + '</div>';
             el.find('#weather').html(weather);
 
             // forecast
             el.find('#forecast_container').append('<div id="current"></div>');
             var curr_for = curr_temp + '<p class="high_low">' + data.forecast[0].day_htemp + '&deg;&nbsp;/&nbsp;' + data.forecast[0].day_ltemp + '&deg;</p>';
-            curr_for    += '<p class="city">' + 'מרכז הארץ' + '</p>';
+            curr_for    += '<p class="city">' + data.city + '</p>';
             curr_for    += '<p class="text">' + data.forecast[0].day_text + '</p>';
             el.find('#current').css('background','url(' + el.weatherImagesPath + data.forecast[0].day_icon + '.png) 50% 0 no-repeat').append(curr_for);
 

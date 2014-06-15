@@ -12,15 +12,15 @@ $this->layout='//layouts/billboard';
 <!--<div class="span4" id="DateTimeWidget">
 	</div> -->
 	<div class="span5" id="WhetherWidget">
-		<div id="digiclock"></div>
-	</div>
+            <div id="digiclock"></div>
+ 
+        </div>
+
 </div>
 <div class="row-fluid" id="MiddleRow">
-	<div class="span2" id="Adds1">
-	</div>
-	<div class="span2" id="Adds2">
-	</div>
-	<div class="span8" id="Billboard">	
+	<div class="span6 myyiiBorder" id="Adds1">
+	</div>	
+	<div class="span6" id="Billboard">	
 		<div id="banner-fade">
     		<ul class="bjqs" dir="rtl">
                 
@@ -40,7 +40,8 @@ $this->layout='//layouts/billboard';
 	</div>	
 </div>
 <div class="row-fluid" id="BottomRow">
-	<div class="span4" id="Adds3">
+	<div class="span4 myyiiBorder" id="Adds3">
+            <h3>מסכים ממוחשבים: 072-8762233</h3>
 	</div>
 	<div class="span8" id="YnetWidget">
 		<div id="ynetNewsScroller" class="sagscroller"></div>
@@ -53,20 +54,20 @@ $this->layout='//layouts/billboard';
 	        $('#digiclock').jdigiclock({
 	            // Configuration goes here
 	            clockImagesPath: 'js/jdigiclock/images/clock/',
-                weatherImagesPath: 'js/jdigiclock/images/weather/',
-                lang: 'he',
-                am_pm: false,
-                weatherLocationCode: 'MEA|IL|IS005|HOLON',
-                weatherMetric: 'C'                             
+                    weatherImagesPath: 'js/jdigiclock/images/weather/',
+                    lang: 'he',
+                    am_pm: false,
+                    weatherLocationCode: 'MEA|IL|IS005|HOLON',
+                    weatherMetric: 'C'                             
 	        });	  
 			
-			// Billboard slider
+                // Billboard slider
 	        $('#banner-fade').bjqs({
-				'showcontrols' : false,
-				'animduration' : '950', // how fast the animation are
-				'animspeed' : '10000', // the delay between each slide
-		        responsive : true
-		    });      
+                    'showcontrols' : false,
+                    'animduration' : '1250', // how fast the animation are
+                    'animspeed' : '6500', // the delay between each slide
+                    responsive : true
+                });      
 	    });
 
 	   
@@ -95,39 +96,39 @@ $this->layout='//layouts/billboard';
 				groupbylabel: false,
 				entries: 100 //<--no comma following last option
 			},
-			refreshsecs: 60,
-			pause: 7600,
-			animatespeed: 2500 //<--no comma following last option
+			refreshsecs: 360,
+			pause: 10000,
+			animatespeed: 3500 //<--no comma following last option
 		});
 
 	</script>
 	<script type="text/javascript"> <!-- Ken Burner Effect
 		$('#crossSlide').crossSlide({
-			fade: 1
+			fade: 2
 			}, [
 			  {
 				src:  'images/1.jpg',
 				alt:  'Sand Castle',
-				from: '100% 80% 1x',
-				to:   '100% 0% 1.7x',
+				from: '100% 100% 1x',
+				to:   '70% 70% 1.7x',
 				time: 30
 			  }, {
 				src:  'images/2.jpg',
 				alt:  'Sunflower',
-				from: 'top left',
-				to:   'bottom right 1.5x',
+				from: '100% 100% 1x',
+				to:   '70% 70% 1.7x',
 				time: 30
 			  }, {
 				src:  'images/3.jpg',
 				alt:  'Flip Flops',
-				from: '100% 80% 1.5x',
-				to:   '80% 0% 1.1x',
+				from: '100% 100% 1x',
+				to:   '70% 70% 1.7x',
 				time: 30
 			  }, {
 				src:  'images/4.jpg',
 				alt:  'Rubber Ring',
-				from: '100% 50%',
-				to:   '30% 50% 1.5x',
+				from: '100% 100% 1x',
+				to:   '70% 70% 1.7x',
 				time: 30
 			  },{
 				src:  'images/5.jpg',
@@ -152,37 +153,19 @@ $this->layout='//layouts/billboard';
 				alt:  'Rubber Ring',
 				from: '100% 50%',
 				to:   '30% 50% 1.5x',
-				time: 30
+				time: 300
 			  },{
 				src:  'images/9.jpg',
 				alt:  'Sand Castle',
 				from: '100% 80% 1x',
 				to:   '100% 0% 1.7x',
-				time: 30
+				time: 300
 			  }, {
 				src:  'images/10.jpg',
 				alt:  'Sunflower',
 				from: 'top left',
 				to:   'bottom right 1.5x',
-				time: 30
-			  }, {
-				src:  'images/11.jpg',
-				alt:  'Flip Flops',
-				from: '100% 80% 1.5x',
-				to:   '80% 0% 1.1x',
-				time: 30
-			  }, {
-				src:  'images/12.jpg',
-				alt:  'Rubber Ring',
-				from: '100% 50%',
-				to:   '30% 50% 1.5x',
-				time: 30
-			  }, {
-				src:  'images/13.jpg',
-				alt:  'Rubber Ring',
-				from: '100% 50%',
-				to:   '30% 50% 1.5x',
-				time: 30
+				time: 300
 			  }
 			], function(idx, img, idxOut, imgOut) {
 			  if (idxOut == undefined)

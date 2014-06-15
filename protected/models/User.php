@@ -82,7 +82,7 @@ class User extends BillboardActiveRecord
 			'email' => 'אי-מייל',
 			'username' => 'שם משתמש',
 			'password' => 'סיסמה',
-            'password_repeat' => 'חזור על סיסמה',
+                        'password_repeat' => 'חזור על סיסמה',
 			'last_login_time' => 'כניסה אחרונה',
 			'create_time' => 'Create Time',
 			'create_user_id' => 'Create User',

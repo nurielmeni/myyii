@@ -10,7 +10,9 @@ body
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	height: 100%;	
-    background: white;
+        background: url(../images/bgblue.jpg) no-repeat center center fixed;
+        background-size: 100%;
+        background: white;
 }
 
 #page
@@ -18,8 +20,10 @@ body
 	margin-top: 1%;
 	margin-bottom: 1%;	
 	width: auto;
-    height: 100%;
-    background: white;
+        height: 100%;
+        background: url(../images/bgblue.jpg) no-repeat center center fixed;
+        background-size: 100%;
+        background: white;
 }
 
 #header
@@ -33,7 +37,7 @@ body
 {
 	padding-left: 20px;
 	padding-right: 20px;
-    height: 100%;
+        height: 100%;
 }
 
 #sidebar
@@ -245,7 +249,8 @@ div.search-form
 #TopRow
 {
 	margin-right: -10px;
-	height: 37%;
+        height: 30%;
+	max-height: 245px;        
 }
 
 .row-fluid .carousel-caption
@@ -266,13 +271,14 @@ div.search-form
 #MiddleRow
 {
 	margin-right: -10px;
-	height: 39%;
+	height: 60%;
 }
 
 #BottomRow
 {
 	margin-right: -10px;
-	height: 34%;
+        height: 10%;
+	min-height: 100px;
 }
 #BuildingPictures, #WhetherWidget, #DateTimeWidget, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
 {
@@ -307,27 +313,30 @@ div.search-form
 
 #Adds1
 {
-	border-color: #CCFFFF;
+	height: 87%;
 }
 
 #Adds2
 {
-	border-color: #D6FFAD;
 }
 
 #Billboard
 {
-	border-color: #CCFFFF;
 }
 
 #Adds3
 {
-	border-color: #D6FFAD;
 }
 
 #YnetWidget
 {
-	border-color: #A3CCCC;
+}
+
+.myyiiBorder
+{
+    border-color: #D7DDDD;
+    border-width: 1px;
+    border-style: groove;
 }
 
 #YnetWidget ul li .rssContent
