@@ -1,0 +1,2 @@
+CREATE DATABASE  IF NOT EXISTS `bbdb_test` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `bbdb_test`;
