@@ -54,11 +54,6 @@ body
 	border-top: 1px solid #C9E0ED;
 }
 
-#logo
-{
-	padding: 10px 20px;
-	font-size: 200%;
-}
 
 #mainmenu
 {
@@ -241,16 +236,14 @@ div.search-form
 	background: #80CFFF;
 }
 
-.span2, .span4, .span8
+.span2, .span4, .span6, .span8, .span12
 {
-	height: 96%;
+	height: 100%;
 }
 
 #TopRow
 {
-	margin-right: -10px;
-        height: 30%;
-	max-height: 245px;        
+        height: 100%;
 }
 
 .row-fluid .carousel-caption
@@ -268,18 +261,17 @@ div.search-form
     visibility: hidden;
 }
 
-#MiddleRow
+#LeftColumn
 {
-	margin-right: -10px;
-	height: 60%;
+    
 }
 
-#BottomRow
+#RightColumn
 {
-	margin-right: -10px;
-        height: 10%;
-	min-height: 100px;
+    
 }
+
+
 #BuildingPictures, #WhetherWidget, #DateTimeWidget, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
 {
 }
@@ -313,30 +305,46 @@ div.search-form
 
 #Adds1
 {
-	height: 87%;
+
 }
 
 #Adds2
 {
 }
+#Logo
+{
+    height: 7%;
+    max-height: 80px;
+    padding: 5px 5px;
+    font-size: 200%;
+    background-image: url('Logo.png');
+
+  
+}
 
 #Billboard
 {
+    height: 80%;
 }
-
+ 
 #Adds3
 {
 }
 
-#YnetWidget
-{
-}
+
 
 .myyiiBorder
 {
-    border-color: #D7DDDD;
+/*    border-color: #D7DDDD;
     border-width: 1px;
     border-style: groove;
+*/
+}
+
+#YnetWidget
+{
+    height: 13%;
+    /*max-height: 90px;*/   
 }
 
 #YnetWidget ul li .rssContent
@@ -348,5 +356,9 @@ div.search-form
 {
 	height: 100%;
 	width:	100%;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 450px;
+            
 	display: inline-block;
 }
