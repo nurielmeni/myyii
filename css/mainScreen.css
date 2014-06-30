@@ -7,23 +7,19 @@ body
 {
 	margin: 0;
 	padding-bottom: 5px;
-	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
 	height: 100%;	
-        background: url(../images/bgblue.jpg) no-repeat center center fixed;
-        background-size: 100%;
-        background: white;
+        background: ivory;
 }
 
 #page
 {
-	margin-top: 1%;
-	margin-bottom: 1%;	
-	width: auto;
-        height: 100%;
-        background: url(../images/bgblue.jpg) no-repeat center center fixed;
-        background-size: 100%;
-        background: white;
+    margin-top: 1%;
+    margin-bottom: 1%;	
+    width: auto;
+    height: 100%;
+    background: ivory;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 #header
@@ -35,205 +31,7 @@ body
 
 #content
 {
-	padding-left: 20px;
-	padding-right: 20px;
         height: 100%;
-}
-
-#sidebar
-{
-	padding: 20px 20px 20px 0;
-}
-
-#footer
-{
-	padding: 10px;
-	margin: 10px 20px;
-	font-size: 0.8em;
-	text-align: center;
-	border-top: 1px solid #C9E0ED;
-}
-
-
-#mainmenu
-{
-	background:white url(bg.gif) repeat-x left top;
-}
-
-#mainmenu ul
-{
-	padding:6px 20px 5px 20px;
-	margin:0px;
-}
-
-#mainmenu ul li
-{
-	display: inline;
-}
-
-#mainmenu ul li a
-{
-	color:#ffffff;
-	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
-	text-decoration:none;
-	padding:5px 8px;
-}
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-{
-	color: #6399cd;
-	background-color:#EFF4FA;
-	text-decoration:none;
-}
-
-div.flash-error, div.flash-notice, div.flash-success
-{
-	padding:.8em;
-	margin-bottom:1em;
-	border:2px solid #ddd;
-}
-
-div.flash-error
-{
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4;
-}
-
-div.flash-notice
-{
-	background:#FFF6BF;
-	color:#514721;
-	border-color:#FFD324;
-}
-
-div.flash-success
-{
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880;
-}
-
-div.flash-error a
-{
-	color:#8a1f11;
-}
-
-div.flash-notice a
-{
-	color:#514721;
-}
-
-div.flash-success a
-{
-	color:#264409;
-}
-
-div.form .rememberMe label
-{
-	display: inline;
-}
-
-div.view
-{
-	padding: 10px;
-	margin: 10px 0;
-	border: 1px solid #C9E0ED;
-}
-
-div.breadcrumbs
-{
-	font-size: 0.9em;
-	padding: 5px 20px;
-}
-
-div.breadcrumbs span
-{
-	font-weight: bold;
-}
-
-div.search-form
-{
-	padding: 10px;
-	margin: 10px 0;
-	background: #eee;
-}
-
-.portlet
-{
-
-}
-
-.portlet-decoration
-{
-	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
-}
-
-.portlet-title
-{
-	font-size: 12px;
-	font-weight: bold;
-	padding: 0;
-	margin: 0;
-	color: #298dcd;
-}
-
-.portlet-content
-{
-	font-size:0.9em;
-	margin: 0 0 15px 0;
-	padding: 5px 8px;
-	background:#EFFDFF;
-}
-
-.portlet-content ul
-{
-	list-style-image:none;
-	list-style-position:outside;
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
-}
-
-.portlet-content li
-{
-	padding: 2px 0 4px 0px;
-}
-
-.operations
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.operations li
-{
-	padding-bottom: 2px;
-}
-
-.operations li a
-{
-	font: bold 12px Arial;
-	color: #0066A4;
-	display: block;
-	padding: 2px 0 2px 8px;
-	line-height: 15px;
-	text-decoration: none;
-}
-
-.operations li a:visited
-{
-	color: #0066A4;
-}
-
-.operations li a:hover
-{
-	background: #80CFFF;
 }
 
 .span2, .span4, .span6, .span8, .span12
@@ -251,6 +49,11 @@ div.search-form
 	direction: rtl;
 }
 
+#banner-fade
+{
+    padding: 0px;
+}
+
 .container-fluid .row-fluid .span2 .span4 .span8
 {
     height: 100%;
@@ -262,75 +65,97 @@ div.search-form
 }
 
 #LeftColumn
-{
-    
+{   
 }
 
 #RightColumn
-{
-    
+{   
 }
 
-
-#BuildingPictures, #WhetherWidget, #DateTimeWidget, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
+#BuildingPictures, #wheather, #date_time, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
 {
 }
 
 #BuildingPictures
 {
-	border-color: #CCFFFF;
-	height: 100%;
+    border-color: #CCFFFF;
+    height: 100%;
 }
 
-#WhetherWidget
+#date_time
 {
-	border-color: #A3CCCC;
+    text-align: center;    
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+    padding-bottom: 6px !important;
+    border: 2px solid #e9e9e9 !important;
+    
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(189,255,251,0.37) 0%, rgba(164,227,244,0.42) 13%, rgba(17,115,181,0.76) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(189,255,251,0.37)), color-stop(13%,rgba(164,227,244,0.42)), color-stop(100%,rgba(17,115,181,0.76))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(189,255,251,0.37) 0%,rgba(164,227,244,0.42) 13%,rgba(17,115,181,0.76) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(189,255,251,0.37) 0%,rgba(164,227,244,0.42) 13%,rgba(17,115,181,0.76) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(189,255,251,0.37) 0%,rgba(164,227,244,0.42) 13%,rgba(17,115,181,0.76) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(189,255,251,0.37) 0%,rgba(164,227,244,0.42) 13%,rgba(17,115,181,0.76) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ebdfffb', endColorstr='#c21173b5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-#DateTimeWidget
+div#date_time span
 {
-	border-color: #D6FFAD;
+    font-size: 50px;
+}
+
+#wheather
+{   
+}
+
+#Adds1
+{   
 }
 
 #crossSlide
 {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 #crossSlide img
 {
-	max-width: none;
-}
-
-#Adds1
-{
-
+    max-width: none;
 }
 
 #Adds2
 {
 }
+
 #Logo
 {
-    height: 7%;
+    height: 12%;
     max-height: 80px;
-    padding: 5px 5px;
-    
-
-  
+    padding: 5px 5px;  
 }
 
 #Billboard
 {
-    height: 80%;
+    height: 70%;
+}
+
+Div#billboardTitle
+{
+    border-bottom: 2px solid #e9e9e9 !important;   
+}
+
+Div#billboardTitle
+{
+    font-weight: 400;
+    font-size: 28px;
+    font-family: Source Sans Pro;
+    text-align: center;
 }
  
 #Adds3
 {
 }
-
-
 
 .myyiiBorder
 {
@@ -342,24 +167,25 @@ div.search-form
 
 #YnetWidget
 {
-    height: 13%;
+    height: 18%;
+    border-top: 2px solid #e9e9e9 !important;
     /*max-height: 90px;*/   
 }
 
 #YnetWidget ul li .rssContent
 {
-	float: right;
+    float: right;
 }
 
 #digiclock
 {
-	height: 100%;
-	width:	100%;
-        min-height: 300px;
-        max-height: 300px;
-        min-width: 450px;
-            
-	display: inline-block;
+    height: 100%;
+    width:	100%;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 450px;
+
+    display: inline-block;
 }
 
 div.aw-widget-current-inner a.aw-toggle

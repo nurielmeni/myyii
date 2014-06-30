@@ -29,7 +29,7 @@ function date_time(id)
         {
                 s = "0"+s;
         }
-        result = ''+days[day]+' '+d+' ב'+months[month]+' '+year+'\n'+h+':'+m+':'+s;
+        result = 'יום '+days[day]+' '+d+' ב'+months[month]+' '+year+'<br><br><span>'+h+':'+m+':'+s+'</span>';
         document.getElementById(id).innerHTML = result;
         setTimeout('date_time("'+id+'");','1000');
         return true;
