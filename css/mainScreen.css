@@ -316,8 +316,7 @@ div.search-form
     height: 7%;
     max-height: 80px;
     padding: 5px 5px;
-    font-size: 200%;
-    background-image: url('Logo.png');
+    
 
   
 }
@@ -361,4 +360,9 @@ div.search-form
         min-width: 450px;
             
 	display: inline-block;
+}
+
+div.aw-widget-current-inner a.aw-toggle
+{
+    visibility: hidden;
 }
