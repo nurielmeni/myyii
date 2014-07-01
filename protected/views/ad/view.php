@@ -21,13 +21,18 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
-		'name',
-		'description',
-		array(
-            'name'=>$model->getAttributeLabel('html'),
-            'type'=>'html',
-            'value'=>CHtml::decode($model->html),
-        ),
+            'id',
+            'name',
+            'description',
+            array(
+                'name'=>$model->getAttributeLabel('screens'),
+                'type'=>'raw',
+                'value'=>count($model->screens),
+            ),
+            array(
+                'name'=>$model->getAttributeLabel('html'),
+                'type'=>'html',
+                'value'=>CHtml::decode($model->html),
+                ),
 	),
-)); ?>
+));
