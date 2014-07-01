@@ -71,16 +71,17 @@ class Ad extends BillboardActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
-			'id' => 'מספר',
-			'name' => 'שם',
-			'description' => 'תיאור',
-			'html' => 'תוכן דף',
-			'create_time' => 'Create Time',
-			'create_user_id' => 'Create User',
-			'update_time' => 'Update Time',
-			'update_user_id' => 'Update User',
-		);
+            return array(
+                'id' => 'מספר',
+                'name' => 'שם',
+                'description' => 'תיאור',
+                'html' => 'תוכן דף',
+                'screens' => 'מספר מסכים קשורים',
+                'create_time' => 'Create Time',
+                'create_user_id' => 'Create User',
+                'update_time' => 'Update Time',
+                'update_user_id' => 'Update User',
+            );
 	}
 
 	/**

@@ -90,6 +90,7 @@ body
     font-weight: 400;
     font-family: Source Sans Pro;
     padding-bottom: 6px !important;
+    padding-top: 6px !important;
     border: 2px solid #e9e9e9 !important;
     
     background: -moz-radial-gradient(center, ellipse cover,  rgba(189,255,251,0.37) 0%, rgba(164,227,244,0.42) 13%, rgba(17,115,181,0.76) 100%); /* FF3.6+ */

@@ -16,8 +16,12 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
 	<?php echo CHtml::encode($data->description); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('screens')); ?>:</b>
+	<?php echo count($data->screens); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('html')); ?>:</b>
-	<?php echo CHtml::encode($data->html); ?>
-	<br />    
+	<?php echo $data->html; ?>
+	<br />
  </div>
