@@ -64,13 +64,13 @@ class Screen extends BillboardActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array(
-			'client' => array(self::BELONGS_TO, 'Client', 'client_id'),
-			'monitor' => array(self::BELONGS_TO, 'Monitor', 'monitor_id'),
-			'tblAds' => array(self::MANY_MANY, 'Ad', 'tbl_screen_ad_assignment(screen_id, ad_id)'),
-		);
+            // NOTE: you may need to adjust the relation name and the related
+            // class name for the relations automatically generated below.
+            return array(
+                'client' => array(self::BELONGS_TO, 'Client', 'client_id'),
+                'monitor' => array(self::BELONGS_TO, 'Monitor', 'monitor_id'),
+                'ads' => array(self::MANY_MANY, 'Ad', 'tbl_screen_ad_assignment(screen_id, ad_id)'),
+            );
 	}
 
 	/**
@@ -78,18 +78,18 @@ class Screen extends BillboardActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
-			'id' => 'מספר',
-			'name' => 'שם',
-			'description' => 'תיאור',
-			'monitor_id' => 'מסך',
-			'client_id' => 'מחשב',
-            'yeshuv_id' => 'יישוב',
-            'create_time' => 'Create Time',
-			'create_user_id' => 'Create User',
-			'update_time' => 'Update Time',
-			'update_user_id' => 'Update User',
-		);
+            return array(
+                'id' => 'מספר',
+                'name' => 'שם',
+                'description' => 'תיאור',
+                'monitor_id' => 'מסך',
+                'client_id' => 'מחשב',
+                'yeshuv_id' => 'יישוב',
+                'create_time' => 'Create Time',
+                'create_user_id' => 'Create User',
+                'update_time' => 'Update Time',
+                'update_user_id' => 'Update User',
+            );
 	}
 
 	/**

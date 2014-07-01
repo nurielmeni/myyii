@@ -62,7 +62,7 @@ class Ad extends BillboardActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tblScreens' => array(self::MANY_MANY, 'Screen', 'tbl_screen_ad_assignment(ad_id, screen_id)'),
+			'screens' => array(self::MANY_MANY, 'Screen', 'tbl_screen_ad_assignment(ad_id, screen_id)'),
 		);
 	}
 

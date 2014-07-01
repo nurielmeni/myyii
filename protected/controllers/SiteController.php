@@ -33,18 +33,16 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-        $screen_id = Yii::app()->request->getParam('screenID',1);
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-        
-        // Gets the screen model 
-        //$model = $this->loadModel($screen_id);
-        
-        $model = Ad::model()->findAll();
-        $dataProvider = new CActiveDataProvider('Ad');
-		$this->render('index', array(
-			'model'=>$model,
-		));
+            $screen_id = Yii::app()->request->getParam('ID',1);
+            $screen = Screen::model()->findByPk($screen_id);
+            $ads = $screen->ads;
+            $yeshuv = $screen->getYeshuv();
+            //$dataProvider = new CActiveDataProvider('Ad');
+            $this->render('index', array(
+                'ads'=>$ads,
+                'screen'=>$screen,
+                'yeshuv'=>$yeshuv,
+            ));
 	}
 
 	/**

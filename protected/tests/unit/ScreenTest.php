@@ -38,10 +38,7 @@ class ScreenTest extends CDbTestCase
         $newScreen->setAttributes(array(
                 'name'=>$newScreenName,
                 'description'=>"New screen description.",
-                ));
-        
+                ));        
     }
             
 }
-   
-?>

@@ -1,14 +1,15 @@
 html
 {
-	height: 98%;
-	overflow: hidden;
+    height: 98%;
+    overflow: hidden;
+    background: ivory;
 }
 body
 {
-	margin: 0;
-	padding-bottom: 5px;
-	height: 100%;	
-        background: ivory;
+    margin: 0;
+    padding-bottom: 5px;
+    height: 100%;	
+    background: ivory;
 }
 
 #page
@@ -132,7 +133,8 @@ div#date_time span
 {
     height: 12%;
     max-height: 80px;
-    padding: 5px 5px;  
+    padding: 5px 5px; 
+    float: right;
 }
 
 #Billboard
@@ -143,14 +145,16 @@ div#date_time span
 Div#billboardTitle
 {
     border-bottom: 2px solid #e9e9e9 !important;   
-}
-
-Div#billboardTitle
-{
     font-weight: 400;
     font-size: 28px;
     font-family: Source Sans Pro;
     text-align: center;
+    padding-bottom: 6px;
+}
+
+Div#billboardTitle span
+{
+    font-weight: bold;
 }
  
 #Adds3
@@ -175,17 +179,6 @@ Div#billboardTitle
 #YnetWidget ul li .rssContent
 {
     float: right;
-}
-
-#digiclock
-{
-    height: 100%;
-    width:	100%;
-    min-height: 300px;
-    max-height: 300px;
-    min-width: 450px;
-
-    display: inline-block;
 }
 
 div.aw-widget-current-inner a.aw-toggle

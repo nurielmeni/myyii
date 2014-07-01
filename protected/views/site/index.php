@@ -8,27 +8,30 @@ $this->layout='//layouts/billboard';
 
     <div class="row-fluid" id="TopRow">
 	<div class="span6 myyiiBorder" id="RightColumn">
-            <div id="date_time"></div>
-            <div>
-            <a href="http://www.accuweather.com/he/il/bat-yam/212477/weather-forecast/212477" class="aw-widget-legal">
-            </a><div id="awcc1403769386036" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1403769386036"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+            <div class="" id="date_time"></div>
+            <div class="">
+                    <a href="http://www.accuweather.com/he/il/bat-yam/212477/weather-forecast/212477" class="aw-widget-legal"></a>
+                    <div id="awcc1403769386036" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1403769386036"></div>
+                    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
             </div>	
             <div class="myyiiBorder" id="Adds1">
                 <iframe id="html576f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5" src="banner/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5.html" width="100%" height="700" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
-             </div>	
+            </div>	
  	</div>
 	<div class="span6 myyiiBorder" id="LeftColumn">
-            <div class="myyiiBorder" id="Logo">
-                <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.PNG'; ?>" />
+            <div class="row-fluid myyiiBorder" id="TopLeft">
+                <div class="myyiiBorder" id="Logo">
+                    <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.PNG'; ?>" />
+                </div>                
             </div>
-            <div class="myyiiBorder" id="Billboard">
+            <div class="row-fluid myyiiBorder" id="Billboard">
                 <div class="myyiiBorder" id="billboardTitle">
-                    <span>הודעות ועד הבית:</span>
+                    הודעות ועד הבית:  <span><?php echo $screen->name.', '.$yeshuv ?></span>
                 </div>
 		<div id="banner-fade">
                     <ul class="bjqs" dir="rtl">                
                         <?php
-                        foreach ($model as $ad)
+                        foreach ($ads as $ad)
                         {
                           echo CHtml::openTag('li');
                           echo CHtml::decode($ad->html);
@@ -38,7 +41,7 @@ $this->layout='//layouts/billboard';
                     </ul>
 		</div>
             </div>	
-            <div class="myyiiBorder" id="YnetWidget">
+            <div class="row-fluid myyiiBorder" id="YnetWidget">
                     <div id="ynetNewsScroller" class="sagscroller"></div>
             </div>	
     </div>
