@@ -8,9 +8,9 @@ $this->layout='//layouts/billboard';
 
     <div class="row-fluid" id="TopRow">
         
-	<div class="span5 myyiiBorder" id="RightColumn">
+	<div class="span6 myyiiBorder" id="RightColumn">
             <div class="row-fluid" id="TopRight">
-                <div class="" id="date_time"><p id="date_time_text"></p></div>
+                
                 <div class="" id="weather">
                     <a href="http://www.accuweather.com/he/il/tel-aviv/215854/weather-forecast/215854" class="aw-widget-legal">
                     <!--
@@ -18,6 +18,7 @@ $this->layout='//layouts/billboard';
                     -->
                     </a><div id="awcc1404389907548" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1404389907548"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
                 </div>
+                <div class="" id="date_time"><p id="date_time_text"></p></div>
             </div>
             <div class="row-fluid" id="Commertial">
                 <div class="myyiiBorder" id="Adds1">
@@ -26,7 +27,7 @@ $this->layout='//layouts/billboard';
             </div>
  	</div>
         
-	<div class="span7 myyiiBorder" id="LeftColumn">
+	<div class="span6 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder" id="TopLeft">
                 <div class="myyiiBorder" id="Logo">
                     <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.PNG'; ?>" />

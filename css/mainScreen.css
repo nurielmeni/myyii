@@ -5,7 +5,7 @@ html
     width: 100%;
     margin-top: 5px;
     overflow: hidden;
-    background: ivory;
+    background: rgb(29, 39, 79);
 }
 
 body
@@ -14,7 +14,7 @@ body
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: ivory;
+    background: rgb(29, 39, 79);
 }
 
 #page
@@ -23,7 +23,7 @@ body
     height: 100%;
     padding-right: 6px;
     padding-left: 6px;
-    background: ivory;
+    background: rgb(29, 39, 79);;
 }
 
 #header
@@ -36,11 +36,13 @@ body
 #content
 {
         height: 100%;
+        background: rgb(29, 39, 79);
 }
 
 .span2, .span4, .span6, .span8, .span12
 {
 	height: 100%;
+        background: rgb(29, 39, 79);
 }
 
 #TopRow
@@ -51,6 +53,7 @@ body
 .row-fluid .carousel-caption
 {
 	direction: rtl;
+        background: rgb(29, 39, 79);
 }
 
 #banner-fade
@@ -84,8 +87,8 @@ body
 
 #date_time
 { 
-    float: right;
-    width: 45%;
+    float: left;
+    width: 35%;
     margin-left: -4px;
 }
 
@@ -100,8 +103,8 @@ body
 
 div.aw-widget-current-inner
 {
-    width: 55%;
-    float: left;
+    width: 65%;
+    float: right;
 }
 
 div#date_time span
@@ -125,8 +128,7 @@ div#date_time span
 
 #Logo
 {
-    max-height: 80px;
-    padding: 5px 5px; 
+    max-height: 76px;
     float: right;
 }
 
