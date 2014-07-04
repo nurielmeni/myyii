@@ -7,18 +7,26 @@ $this->layout='//layouts/billboard';
 ?>
 
     <div class="row-fluid" id="TopRow">
-	<div class="span6 myyiiBorder" id="RightColumn">
-            <div class="" id="date_time"></div>
-            <div class="">
-                    <a href="http://www.accuweather.com/he/il/bat-yam/212477/weather-forecast/212477" class="aw-widget-legal"></a>
-                    <div id="awcc1403769386036" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1403769386036"></div>
-                    <script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-            </div>	
-            <div class="myyiiBorder" id="Adds1">
-                <iframe id="html576f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5" src="banner/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5.html" width="100%" height="700" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
-            </div>	
+        
+	<div class="span5 myyiiBorder" id="RightColumn">
+            <div class="row-fluid" id="TopRight">
+                <div class="" id="date_time"><p id="date_time_text"></p></div>
+                <div class="" id="weather">
+                    <a href="http://www.accuweather.com/he/il/tel-aviv/215854/weather-forecast/215854" class="aw-widget-legal">
+                    <!--
+                    By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+                    -->
+                    </a><div id="awcc1404389907548" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1404389907548"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+                </div>
+            </div>
+            <div class="row-fluid" id="Commertial">
+                <div class="myyiiBorder" id="Adds1">
+                    <iframe id="html576f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5" src="banner/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5.html" width="100%" height="700" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+                </div>	
+            </div>
  	</div>
-	<div class="span6 myyiiBorder" id="LeftColumn">
+        
+	<div class="span7 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder" id="TopLeft">
                 <div class="myyiiBorder" id="Logo">
                     <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.PNG'; ?>" />
@@ -48,7 +56,7 @@ $this->layout='//layouts/billboard';
 
 	
 
-	<script type="text/javascript"> <!-- DOM Ready functions (jdigiclock, 
+	<script type="text/javascript"> <!-- DOM Ready functions
 	    $(document).ready(function() {
 	        // Billboard slider
 	        $('#banner-fade').bjqs({
@@ -59,7 +67,8 @@ $this->layout='//layouts/billboard';
                 });      
 
 		// Date and Time
-                date_time('date_time');
+                        
+                date_time('date_time_text');
 	    });	   
 	</script>
 	
