@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
@@ -8,7 +8,7 @@ $this->layout='//layouts/billboard';
 
     <div class="row-fluid" id="TopRow">
         
-	<div class="span6 myyiiBorder" id="RightColumn">
+	<div class="span5 myyiiBorder" id="RightColumn">
             <div class="row-fluid" id="TopRight">
                 
                 <div class="" id="weather">
@@ -22,15 +22,15 @@ $this->layout='//layouts/billboard';
             </div>
             <div class="row-fluid" id="Commertial">
                 <div class="myyiiBorder" id="Adds1">
-                    <iframe id="html576f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5" src="banner/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5/76f6cf31841d2d6e5ddff7a7f8cdd4f1c95aa9ab4bb5.html" width="100%" height="700" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+                    <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
                 </div>	
             </div>
  	</div>
         
-	<div class="span6 myyiiBorder" id="LeftColumn">
+	<div class="span7 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder" id="TopLeft">
-                <div class="myyiiBorder" id="Logo">
-                    <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.PNG'; ?>" />
+                <div class="myyiiBorder Logo">
+                    <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.gif'; ?>" />
                 </div>                
             </div>
             <div class="row-fluid myyiiBorder" id="Billboard">

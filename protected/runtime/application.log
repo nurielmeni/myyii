@@ -9050,3 +9050,26 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/myyii/index.php?XDEBUG_SESSION_START=netbeans-xdebug
 ---
+2014/07/07 23:29:55 [error] [exception.CException] exception 'CException' with message 'Alias "ext.ya-simple-feed.YaSimpleFeed" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\yii-1.1.14\framework\YiiBase.php:322
+Stack trace:
+#0 D:\xampp\yii-1.1.14\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.ya-simple-f...', true)
+#1 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.ya-simple-f...', Array)
+#2 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.ya-simple-f...', Array)
+#3 D:\xampp\htdocs\myyii\themes\he1\views\site\index.php(34): CBaseController->widget('ext.ya-simple-f...', Array)
+#4 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', Array, true)
+#6 D:\xampp\yii-1.1.14\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', Array, true)
+#7 D:\xampp\yii-1.1.14\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 D:\xampp\htdocs\myyii\protected\controllers\SiteController.php(45): CController->render('index', Array)
+#9 D:\xampp\yii-1.1.14\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\yii-1.1.14\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\yii-1.1.14\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): CController->run('index')
+#14 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\myyii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/myyii/index.php?r=site/index
+HTTP_REFERER=http://localhost/myyii/index.php?r=site/index
+---
