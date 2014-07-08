@@ -11,8 +11,8 @@ $this->layout='//layouts/billboard';
         
         <div class="row-fluid myyiiBorder" id="MiddleRow">
             <div class="span2 myyiiBorder" id="retroclockbox1"></div>                
-            <div class="span2 myyiiBorder" id="weather"></div>
-            <div class="span2 myyiiBorder" id="date_time"><p id="date_time_text"></p></div>
+            <div class="span4 myyiiBorder" id="weather"></div>
+            <div class="span4 myyiiBorder" id="date_time"><p id="date_time_text"></p></div>
         </div>
 
         <div class="row-fluid myyiiBorder" id="BottomRow">            
@@ -45,13 +45,13 @@ $this->layout='//layouts/billboard';
                         time:function(){return new Date();}
                 });
                 
-                $('#weather').weatherfeed(['UKXX0085'],{
+                $('#weather').weatherfeed(['ISXX0026'],{
                     unit: 'c',
                     image: true,
                     country: false,
-                    highlow: false,
+                    highlow: true,
                     wind: false,
-                    humidity: false,
+                    humidity: true,
                     visibility: false,
                     sunrise: false,
                     sunset: false,
