@@ -10,9 +10,9 @@ $this->layout='//layouts/billboard';
         </div>
         
         <div class="row-fluid myyiiBorder" id="MiddleRow">
-            <div id="retroclockbox1 span2"></div>                
-            <div id="weather span6"></div>
-            <div id="date_time span2"><p id="date_time_text"></p></div>
+            <div class="span2 myyiiBorder" id="retroclockbox1"></div>                
+            <div class="span2 myyiiBorder" id="weather"></div>
+            <div class="span2 myyiiBorder" id="date_time"><p id="date_time_text"></p></div>
         </div>
 
         <div class="row-fluid myyiiBorder" id="BottomRow">            
