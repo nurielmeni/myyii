@@ -7,26 +7,21 @@ $this->layout='//layouts/billboard';
 ?>
     <div class="container-fluid" id="my-container-fluid">
         <div class="row-fluid myyiiBorder" id="TopRow">
-            <div class="" id="weather">
-                <a href="http://www.accuweather.com/he/il/tel-aviv/215854/weather-forecast/215854" class="aw-widget-legal">
-                <!--
-                By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
-                -->
-                </a><div id="awcc1404389907548" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="he" data-useip="true" data-uid="awcc1404389907548"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-            </div>
-            <div class="" id="date_time"><p id="date_time_text"></p></div>
         </div>
-
+        
         <div class="row-fluid myyiiBorder" id="MiddleRow">
+            <div id="retroclockbox1 span2"></div>                
+            <div id="weather span6"></div>
+            <div id="date_time span2"><p id="date_time_text"></p></div>
         </div>
 
-        <div class="row-fluid myyiiBorder" id="BottomRow">
+        <div class="row-fluid myyiiBorder" id="BottomRow">            
         </div>
     </div>
 	
 
 	<script type="text/javascript"> <!-- DOM Ready functions
-	    $(document).ready(function() {
+            $(document).ready(function() {
 	        // Billboard slider
 	        $('#banner-fade').bjqs({
                     'showcontrols' : false,
@@ -38,6 +33,31 @@ $this->layout='//layouts/billboard';
 		// Date and Time
                         
                 date_time('date_time_text');
+                //clock = $('.flip-clock').FlipClock({
+                //    clockFace: 'TwentyFourHourClock'
+                //});
+                
+                $("#retroclockbox1").flipcountdown({
+                        size:"md",
+                        am:false,
+                        showSecond:false,
+                        speedFlip:80,
+                        time:function(){return new Date();}
+                });
+                
+                $('#weather').weatherfeed(['UKXX0085'],{
+                    unit: 'c',
+                    image: true,
+                    country: false,
+                    highlow: false,
+                    wind: false,
+                    humidity: false,
+                    visibility: false,
+                    sunrise: false,
+                    sunset: false,
+                    forecast: false,
+                    link: false
+                });
 	    });	   
 	</script>
 	
@@ -47,9 +67,16 @@ $this->layout='//layouts/billboard';
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/bjqs.js"></script>
 
     	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/date_time.js"></script>
+        
+
+	<link type="text/css" rel="Stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.flipcountdown.css" charset="UTF-8" />        
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.flipcountdown.js"></script>
+        
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.zweatherfeed.min.js"></script>
+           
 
 	<!-- Include the basic styles -->
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="Stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bjqs.css" charset="UTF-8" />
 
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>

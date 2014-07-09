@@ -1,11 +1,10 @@
 html
 {
     margin: 0;
-    height: 99%;
+    height: 100%;
     width: 100%;
-    margin-top: 5px;
     overflow: hidden;
-    background: ivory;
+    background: gray;
 }
 
 body
@@ -14,35 +13,23 @@ body
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: ivory;
+    background: gray;
 }
 
 #page
 {    
     width: auto;
     height: 100%;
-    padding-right: 6px;
-    padding-left: 6px;
-    background: ivory;
+    background: gray;
 }
 
-#header
+.span2, .span4, .span6
 {
-	margin: 0;
-	padding: 0;
-	border-top: 3px solid #C9E0ED;
+    height: 100%;
 }
 
-#content
-{
-        height: 100%;
-        background: ivory;
-}
-
-
-#my-container-fluid
-{
-    
+div#my-container-fluid
+{   
     position: absolute;
     bottom: 0;
     left: 0;
@@ -50,143 +37,66 @@ body
     top: 0;
     margin: 0px;
     padding: 0px;
+    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
 }
 
-.span2, .span4, .span6, .span8, .span12
+
+
+div#TopRow
 {
-	height: 100%;
-        background: ivory;
+    height: 82%;
 }
 
-#TopRow
+
+div#MiddleRow
 {
-    height: 15%;
+    height: 13%;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
 }
 
-#MiddleRow
+div#date_time span
 {
-    height: 75%;
-}
-
-#BottomRow
-{
-    height: 10%;
-}
-
-
-.row-fluid .carousel-caption
-{
-	direction: rtl;
-        background: ivory;
-}
-
-#banner-fade
-{
-    padding: 0px;
-}
-
-.container-fluid .row-fluid .span2 .span4 .span8
-{
-    height: 100%;
-}
-
-.bjqs-markers
-{
-    visibility: hidden;
-}
-
-#LeftColumn, #RightColumn
-{   
-    height: 100%;
-}
-
-#TopRight, #TopLeft
-{
-    height: 12%;
-}
-
-#BuildingPictures, #wheather, #date_time, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
-{
+    font-size: 50px;
+    text-shadow: 1px 1px rgba(240,240,240,0.80);
 }
 
 #date_time
 { 
     float: left;
-    width: 35%;
     margin-left: -4px;
 }
 
 #date_time_text
 {
     text-align: center; 
-    font-size: 24px;
-    font-weight: 400;
-    font-family: Source Sans Pro;
+    font-size: 28px;
+    font-family: Alef;
     padding-top: 18px;
 }
 
-div.aw-widget-current-inner
-{
-    width: 65%;
-    float: right;
+#weather
+{       
 }
 
-div#date_time span
+#retroclockbox1
+{    
+    float: left;
+    margin-top: 2.8%;
+    margin-left: 1%;
+    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
+}
+div#BottomRow
 {
-    font-size: 50px;
-    text-shadow: 1px 1px #e9e9e9;
-}
-
-#wheather
-{   
-}
-
-#Commertial
-{
-    height: 88%;
-}
-
-#Adds1
-{   
-	margin-top: 19%;
-}
-
-.Logo
-{
-    max-height: 76px;
-    float: right;
-	width: 100%;
-}
-
-div.Logo img
-{
-    width: 300px;    
-	margin: 0 auto;
-	display: block;
-}
-
-#Billboard
-{
-    height: 60%;
-}
-
-Div#billboardTitle
-{
-    border-bottom: 2px solid #e9e9e9 !important;   
-    font-weight: 400;
-    font-size: 28px;
-    font-family: Source Sans Pro;
-    text-align: center;
-    padding-bottom: 6px;
-}
-
-Div#billboardTitle span
-{
-    font-weight: bold;
-}
- 
-#Adds3
-{
+    height: 6%;
 }
 
 .myyiiBorder
@@ -194,27 +104,4 @@ Div#billboardTitle span
     border-color: #D7DDDD;
     border-width: 1px;
     border-style: groove;
-}
-
-#YnetWidget
-{
-    height: 28%;
-    border-top: 2px solid #e9e9e9 !important;
-    /*max-height: 90px;*/   
-}
-
-#YnetWidget ul li .rssContent
-{
-    float: right;
-	background-color:ivory;
-}
- #ynetNewsScroller ul
- {
-	background-color:ivory;	
- }
-
-
-div.aw-widget-current-inner a.aw-toggle
-{
-    visibility: hidden;
 }
