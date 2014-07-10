@@ -8,8 +8,13 @@ $this->layout='//layouts/billboard';
 
     <div class="row-fluid" id="TopRow">
         
-	<div class="span5 myyiiBorder" id="RightColumn">
-            <div class="row-fluid" id="TopRight">
+	<div class="span6 myyiiBorder" id="RightColumn">
+            <div class="row-fluid" id="Commertial">
+                <div class="myyiiBorder" id="Adds1">
+                    <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+                </div>	
+            </div>
+            <div class="row-fluid" id="BottomRight">
                 
                 <div class="" id="weather">
                     <a href="http://www.accuweather.com/he/il/tel-aviv/215854/weather-forecast/215854" class="aw-widget-legal">
@@ -20,14 +25,9 @@ $this->layout='//layouts/billboard';
                 </div>
                 <div class="" id="date_time"><p id="date_time_text"></p></div>
             </div>
-            <div class="row-fluid" id="Commertial">
-                <div class="myyiiBorder" id="Adds1">
-                    <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
-                </div>	
-            </div>
  	</div>
         
-	<div class="span7 myyiiBorder" id="LeftColumn">
+	<div class="span6 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder" id="TopLeft">
                 <div class="myyiiBorder Logo">
                     <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.gif'; ?>" />
@@ -35,7 +35,7 @@ $this->layout='//layouts/billboard';
             </div>
             <div class="row-fluid myyiiBorder" id="Billboard">
                 <div class="myyiiBorder" id="billboardTitle">
-                    הודעות ועד הבית:  <span><?php echo $screen->name.', '.$yeshuv ?></span>
+                    <span><?php echo $screen->name.', '.$yeshuv ?></span>
                 </div>
 		<div id="banner-fade">
                     <ul class="bjqs" dir="rtl">                
@@ -99,7 +99,7 @@ $this->layout='//layouts/billboard';
 				entries: 100 //<--no comma following last option
 			},
 			refreshsecs: 360,
-			pause: 10000,
+			pause: 25000,
 			animatespeed: 3500 //<--no comma following last option
 		});
 	</script>

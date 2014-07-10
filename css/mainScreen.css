@@ -5,7 +5,7 @@ html
     width: 100%;
     margin-top: 5px;
     overflow: hidden;
-    background: ivory;
+    background-color: lightgray;
 }
 
 body
@@ -14,16 +14,20 @@ body
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: ivory;
+    background-color: lightgray;
 }
 
 #page
-{    
+{  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width: auto;
     height: 100%;
-    padding-right: 6px;
-    padding-left: 6px;
-    background: ivory;
+    background-color: lightgray;
+    
 }
 
 #header
@@ -36,13 +40,13 @@ body
 #content
 {
         height: 100%;
-        background: ivory;
+        background-color: lightgray;
 }
 
 .span2, .span4, .span6, .span8, .span12
 {
 	height: 100%;
-        background: ivory;
+        background-color: lightgray;
 }
 
 #TopRow
@@ -53,7 +57,7 @@ body
 .row-fluid .carousel-caption
 {
 	direction: rtl;
-        background: ivory;
+        background-color: lightgray;        
 }
 
 #banner-fade
@@ -76,9 +80,14 @@ body
     height: 100%;
 }
 
-#TopRight, #TopLeft
+#BottomRight
 {
     height: 12%;
+}
+
+#TopLeft
+{
+    height: 0%;
 }
 
 #BuildingPictures, #wheather, #date_time, #Adds1, #Adds2, #Adds3, #Billboard, #YnetWidget
@@ -119,19 +128,20 @@ div#date_time span
 
 #Commertial
 {
-    height: 88%;
+    height: 76%;
 }
 
 #Adds1
-{   
-	margin-top: 19%;
+{       
+  padding-top: 10%;
 }
 
 .Logo
 {
     max-height: 76px;
     float: right;
-	width: 100%;
+    width: 100%;
+    display: none;
 }
 
 div.Logo img
@@ -139,11 +149,13 @@ div.Logo img
     width: 300px;    
 	margin: 0 auto;
 	display: block;
+            display: none;
+
 }
 
 #Billboard
 {
-    height: 60%;
+    height: 76%;
 }
 
 Div#billboardTitle
@@ -175,21 +187,26 @@ Div#billboardTitle span
 
 #YnetWidget
 {
-    height: 28%;
-    border-top: 2px solid #e9e9e9 !important;
-    /*max-height: 90px;*/   
+    height: 188px;
+    border: 2px solid #e9e9e9 !important;    
 }
 
 #YnetWidget ul li .rssContent
 {
     float: right;
-	background-color:ivory;
+    background-color:rgba(e9,e9,e9,1);
+    font-family: serif;
+    font-size: 20px;
 }
  #ynetNewsScroller ul
  {
-	background-color:ivory;	
+	background-color:rgba(e9,e9,e9,1);	
  }
 
+div.aw-widget-current-inner
+{
+    height: 188px;
+}
 
 div.aw-widget-current-inner a.aw-toggle
 {
