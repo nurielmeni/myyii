@@ -9087,3 +9087,100 @@ Stack trace:
 #9 {main}
 REQUEST_URI=/myyii/index.php?r=site/page
 ---
+2014/07/10 08:51:48 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerSctipt".' in D:\xampp\yii-1.1.14\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CComponent->__call('registerSctipt', Array)
+#1 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CClientScript->registerSctipt('jQuery')
+#2 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#4 D:\xampp\yii-1.1.14\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#5 D:\xampp\yii-1.1.14\framework\web\CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#6 D:\xampp\yii-1.1.14\framework\web\actions\CViewAction.php(140): CController->render('pages/about')
+#7 D:\xampp\yii-1.1.14\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 D:\xampp\yii-1.1.14\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 D:\xampp\yii-1.1.14\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): CController->run('page')
+#12 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\myyii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/myyii/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/myyii/index.php?r=site/page&view=about
+---
+2014/07/10 08:52:18 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerCoreSctipt".' in D:\xampp\yii-1.1.14\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CComponent->__call('registerCoreSct...', Array)
+#1 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CClientScript->registerCoreSctipt('jQuery')
+#2 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#4 D:\xampp\yii-1.1.14\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#5 D:\xampp\yii-1.1.14\framework\web\CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#6 D:\xampp\yii-1.1.14\framework\web\actions\CViewAction.php(140): CController->render('pages/about')
+#7 D:\xampp\yii-1.1.14\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 D:\xampp\yii-1.1.14\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 D:\xampp\yii-1.1.14\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): CController->run('page')
+#12 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\myyii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/myyii/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/myyii/index.php?r=site/page&view=about
+---
+2014/07/10 08:53:24 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerCoreSctipt".' in D:\xampp\yii-1.1.14\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CComponent->__call('registerCoreSct...', Array)
+#1 D:\xampp\htdocs\myyii\protected\views\site\pages\about.php(12): CClientScript->registerCoreSctipt('jquery')
+#2 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\yii-1.1.14\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#4 D:\xampp\yii-1.1.14\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#5 D:\xampp\yii-1.1.14\framework\web\CController.php(782): CController->renderPartial('pages/about', NULL, true)
+#6 D:\xampp\yii-1.1.14\framework\web\actions\CViewAction.php(140): CController->render('pages/about')
+#7 D:\xampp\yii-1.1.14\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 D:\xampp\yii-1.1.14\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 D:\xampp\yii-1.1.14\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): CController->run('page')
+#12 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\myyii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/myyii/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/myyii/index.php?r=site/page&view=about
+---
+2014/07/11 01:27:19 [error] [php] Undefined variable: ientScript (D:\xampp\htdocs\myyii\themes\he1\views\site\index.php:13)
+Stack trace:
+#0 D:\xampp\yii-1.1.14\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\xampp\yii-1.1.14\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\myyii\protected\controllers\SiteController.php(45): SiteController->render()
+#3 D:\xampp\yii-1.1.14\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\yii-1.1.14\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\xampp\yii-1.1.14\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\myyii\index.php(13): CWebApplication->run()
+REQUEST_URI=/myyii/index.php?r=site/index
+in D:\xampp\htdocs\myyii\themes\he1\views\site\index.php (13)
+in D:\xampp\htdocs\myyii\protected\controllers\SiteController.php (45)
+in D:\xampp\htdocs\myyii\index.php (13)
+2014/07/11 01:29:37 [error] [php] Undefined variable: ientScript (D:\xampp\htdocs\myyii\themes\he1\views\site\index.php:13)
+Stack trace:
+#0 D:\xampp\yii-1.1.14\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\xampp\yii-1.1.14\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\xampp\htdocs\myyii\protected\controllers\SiteController.php(45): SiteController->render()
+#3 D:\xampp\yii-1.1.14\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\yii-1.1.14\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\yii-1.1.14\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\xampp\yii-1.1.14\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\xampp\yii-1.1.14\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\yii-1.1.14\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\myyii\index.php(13): CWebApplication->run()
+REQUEST_URI=/myyii/index.php?r=site/index
+in D:\xampp\htdocs\myyii\themes\he1\views\site\index.php (13)
+in D:\xampp\htdocs\myyii\protected\controllers\SiteController.php (45)
+in D:\xampp\htdocs\myyii\index.php (13)

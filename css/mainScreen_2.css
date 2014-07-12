@@ -45,9 +45,9 @@ div#my-container-fluid
 
 div#TopRow
 {
-    height: 79%;
-    margin-top: 0.6%;
-    margin-bottom: 0.6%;
+    height: 78%;
+    margin-bottom: 0.4%;
+    margin-top: 0.2%
 }
 
 div#Commertial, div#Adds1
@@ -58,15 +58,12 @@ div#Commertial, div#Adds1
 div#RightColumn
 {
     border: 2px ridge #bcd1cf;
-    margin-left: 0.6em
 }
 
 div#LeftColumn
 {
     background-image: url(../images/cork-board-small.jpg);
     border: 10px ridge #ad7b16;
-    margin-left: 1.2em;
-    margin-right: 0.6em;
 }
 
 div#banner-fade
@@ -101,9 +98,10 @@ div#Adds1 iframe
     height: 100%;
 }
 
+
 div#MiddleRow
 {
-    height: 13%;
+    height: 15%;
     background: rgb(30,87,153); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
@@ -221,21 +219,24 @@ div#Logo > img
 div#BottomRow
 {
     height: 6%;
-    background: #2f2f2f; /* Old browsers */
-    background: -moz-linear-gradient(top,  #2f2f2f 0%, #373737 12%, #3f3f3f 25%, #2c2c2c 39%, #1b1b1b 50%, #000000 51%, #0b0b0b 60%, #1b1b1b 76%, #111111 91%, #0c0c0c 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f2f2f), color-stop(12%,#373737), color-stop(25%,#3f3f3f), color-stop(39%,#2c2c2c), color-stop(50%,#1b1b1b), color-stop(51%,#000000), color-stop(60%,#0b0b0b), color-stop(76%,#1b1b1b), color-stop(91%,#111111), color-stop(100%,#0c0c0c)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #2f2f2f 0%,#373737 12%,#3f3f3f 25%,#2c2c2c 39%,#1b1b1b 50%,#000000 51%,#0b0b0b 60%,#1b1b1b 76%,#111111 91%,#0c0c0c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #2f2f2f 0%,#373737 12%,#3f3f3f 25%,#2c2c2c 39%,#1b1b1b 50%,#000000 51%,#0b0b0b 60%,#1b1b1b 76%,#111111 91%,#0c0c0c 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #2f2f2f 0%,#373737 12%,#3f3f3f 25%,#2c2c2c 39%,#1b1b1b 50%,#000000 51%,#0b0b0b 60%,#1b1b1b 76%,#111111 91%,#0c0c0c 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #2f2f2f 0%,#373737 12%,#3f3f3f 25%,#2c2c2c 39%,#1b1b1b 50%,#000000 51%,#0b0b0b 60%,#1b1b1b 76%,#111111 91%,#0c0c0c 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#0c0c0c',GradientType=0 ); /* IE6-9 */
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
 }
 
-img#ynetLogo
-{
-    float: right;
-    height: 100%;
+div#address{
+    color: white;
+    padding-top: 1em;
+    font-size: 18px;
 }
+
 
 .myyiiBorder
 {

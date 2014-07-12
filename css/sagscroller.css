@@ -13,19 +13,20 @@ moz-border-radius: 8px;
 }
 
 #ynetNewsScroller{
-font-family: Vendera,Ariel,sans-serif;
+font-family: sans-serif;
 font-size: 22px;
 }
 
 .sagscroller a{
 font-weight:bold;
+color: black;
 }
 
 .sagscroller ul{
 position:absolute;
 margin:0;
 padding:0;
-background:white;
+//background:white;
 list-style:none;
 width: 100%;
 }
@@ -44,12 +45,13 @@ margin: 8px;
 
 .sagscroller ul li .rsscontent{ /*div containing body of each RSS entry*/
 font-size:90%;
-
+color: white;
 }
 
 .sagscroller ul li .rsslabel{ /*div containing label of each RSS entry*/
 margin-top:5px;
-background: #eee;
+//background: #eee;
 font-size:12px;
 clear: both;
+color: red;
 }

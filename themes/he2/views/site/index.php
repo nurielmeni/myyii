@@ -39,15 +39,17 @@ $cs->registerScript('helpers', '
 ?>
 
 <div class="container-fluid" id="my-container-fluid">
-    <div id="clock"></div>
+    <div class="row-fluid myyiiBorder" id="BottomRow"> 
+        <div class="span6" id="address"><?php echo $screen->name.', '.$yeshuv ?></div>
+    </div>
+    
     <div class="row-fluid myyiiBorder" id="TopRow">
 	<div class="span6 myyiiBorder" id="RightColumn">
-        <div class="row-fluid" id="Commertial">
-            <div class="myyiiBorder" id="Adds1">
-                <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
-            </div>	
-        </div>    
-            
+            <div class="row-fluid" id="Commertial">
+                <div class="myyiiBorder" id="Adds1">
+                    <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+                </div>	
+            </div>           
         </div>
 	<div class="span6 myyiiBorder" id="LeftColumn">
             <div id="banner-fade">
@@ -62,21 +64,15 @@ $cs->registerScript('helpers', '
                     ?>
                 </ul>
             </div>
-         </div>
+        </div>
     </div>
 
     <div class="row-fluid myyiiBorder" id="MiddleRow">
         <div class="span2 myyiiBorder" id="retroclockbox1"></div>                
         <div class="span4 myyiiBorder" id="weather"></div>
-        <div class="span4 myyiiBorder" id="date_time"><p id="date_time_text"></p></div>
-        <div class="span2 myyiiBorder" id="logo">
-            <img id="NYMediaLogo" src="<?php echo $baseurl.'/images/NYMedia.gif'; ?>">
+        <div class="span6 myyiiBorder" id="YnetWidget">
+            <div id="ynetNewsScroller" class="sagscroller"></div>
         </div>
-    </div>
-
-    <div class="row-fluid myyiiBorder" id="BottomRow"> 
-        <img id="ynetLogo" src="<?php echo $baseurl.'/images/ynet_logo_new.gif'; ?>">
-        <ul id="news-ticker"></ul>    
     </div>
 </div>
 	
@@ -92,7 +88,7 @@ $cs->registerScript('helpers', '
         });      
 
         // Date and Time
-        date_time('date_time_text');
+        //date_time('date_time_text');
  
         $("#retroclockbox1").flipcountdown({
                 size:"md",
@@ -116,10 +112,5 @@ $cs->registerScript('helpers', '
             link: false
         });
         
-        // URL of the RSS feed            
-        parseRSS('http://www.ynet.co.il/Integration/StoryRss2.xml', displayNewsTicker);
-        // News Ticker Speed
-        setInterval(function(){ tick ($('#news-ticker')) }, 10000);
-
-    });	   
+    });	 
 </script>

@@ -33,7 +33,7 @@ function date_time(id)
         document.getElementById(id).innerHTML = result;
         css1 = $(".aw-widget-content").css("background");
         $("#date_time").css("background", css1);
-        $("#retroclockbox1").css("background", css1);
+        
         height1 = $(".aw-current-weather-inner").css("height");
         $("#date_time").css("height", height1);
         color1 = $(".aw-current-weather-inner").css("color");
