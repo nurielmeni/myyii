@@ -67,11 +67,9 @@ $cs->registerScript('helpers', '
 
     <div class="row-fluid myyiiBorder" id="MiddleRow">
         <div class="span2 myyiiBorder" id="retroclockbox1"></div>                
-        <div class="span4 myyiiBorder" id="weather"></div>
+        <div class="span6 myyiiBorder" id="weather"></div>
         <div class="span4 myyiiBorder" id="date_time"><p id="date_time_text"></p></div>
-        <div class="span2 myyiiBorder" id="logo">
-            <img id="NYMediaLogo" src="<?php echo $baseurl.'/images/NYMedia.gif'; ?>">
-        </div>
+        
     </div>
 
     <div class="row-fluid myyiiBorder" id="BottomRow"> 

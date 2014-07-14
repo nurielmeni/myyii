@@ -40,6 +40,7 @@ $cs->registerScript('helpers', '
 
 <div class="container-fluid" id="my-container-fluid">
     <div class="row-fluid myyiiBorder" id="BottomRow"> 
+        <div class="span6"></div>
         <div class="span6" id="address"><?php echo $screen->name.', '.$yeshuv ?></div>
     </div>
     
@@ -51,7 +52,7 @@ $cs->registerScript('helpers', '
                 </div>	
             </div>           
         </div>
-	<div class="span6 myyiiBorder" id="LeftColumn">
+	<div class="span5 myyiiBorder" id="LeftColumn">
             <div id="banner-fade">
                 <ul class="bjqs" dir="rtl">                
                     <?php

@@ -14,11 +14,11 @@ ul#news-ticker
     overflow:hidden;
     list-style-type:none;  
     color: white;
-    padding-top: 0.6em;
     font-family: sans-serif;
-    font-size: 19px;
+    font-size: 23px;
     padding-right: 1em;
-    max-height: 23px;
+    max-height: 20px;
+    width: 1000px;
 }
 
 ul#news-ticker li

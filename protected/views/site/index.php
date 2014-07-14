@@ -29,9 +29,6 @@ $this->layout='//layouts/billboard';
         
 	<div class="span6 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder" id="TopLeft">
-                <div class="myyiiBorder Logo">
-                    <img src="<?php echo Yii::app()->baseUrl.'/images/Logo.gif'; ?>" />
-                </div>                
             </div>
             <div class="row-fluid myyiiBorder" id="Billboard">
                 <div class="myyiiBorder" id="billboardTitle">
