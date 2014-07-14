@@ -96,8 +96,8 @@ div#Adds1 iframe
 div#MiddleRow
 {
     height: 12%;
-    background: linear-gradient(to bottom, rgba(108,163,226,1) 0%,rgba(140,192,234,1) 50%,rgba(126,184,234,1) 51%,rgba(185,218,243,1) 100%);
-    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
+    background: linear-gradient(to bottom, rgba(127,189,243,1) 0%,rgba(102,173,240,1) 50%,rgba(76,156,242,1) 51%,rgba(53,120,227,1) 100%);
+    box-shadow: inset 0px 0px 18px 0px rgba(250,250,250,0.75);
 }
 
 div#date_time span
@@ -206,15 +206,14 @@ div#BottomRow
 {
     height: 5%;
     margin-top: 1%;
-    background: linear-gradient(to bottom, rgba(108,163,226,1) 0%,rgba(140,192,234,1) 50%,rgba(126,184,234,1) 51%,rgba(185,218,243,1) 100%);
-
-    box-shadow: inset 0px 0px 18px 0px rgba(50,50,50,0.75);
+background: linear-gradient(to bottom, rgba(127,189,243,1) 0%,rgba(102,173,240,1) 50%,rgba(76,156,242,1) 51%,rgba(53,120,227,1) 100%);
+    box-shadow: inset 0px 0px 18px 0px rgba(250,250,250,0.75);
 }
 
 div#address{
-    color: white;
-    padding-top: 0.6em;
-    font-size: 22px;
+    color: black;
+    padding-top: 0.2em;
+    font-size: 26px;
     text-align: center;
 }
 

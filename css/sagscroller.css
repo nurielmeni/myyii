@@ -19,7 +19,7 @@ font-size: 22px;
 
 .sagscroller a{
 font-weight:bold;
-color: black;
+color: blue;
 }
 
 .sagscroller ul{
@@ -45,7 +45,7 @@ margin: 8px;
 
 .sagscroller ul li .rsscontent{ /*div containing body of each RSS entry*/
 font-size:90%;
-color: white;
+color: black;
 }
 
 .sagscroller ul li .rsslabel{ /*div containing label of each RSS entry*/
