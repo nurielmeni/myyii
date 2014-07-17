@@ -25,7 +25,6 @@ $cs->registerScriptFile($baseurl.'/js/jquery.zweatherfeed.min.js', CClientScript
 $cs->registerScriptFile($baseurl.'/js/newsTicker.js', CClientScript::POS_END);
 $cs->registerCssFile($baseurl.'/css/newsTicker.css', 'screen, projection', CClientScript::POS_HEAD);
 
-
 $cs->registerCssFile('http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Alef:400', 'screen, projection', CClientScript::POS_HEAD);
 
 $cs->registerScript('helpers', '                                                           
@@ -41,15 +40,15 @@ $cs->registerScript('helpers', '
 <div class="container-fluid" id="my-container-fluid">
     <div id="clock"></div>
     <div class="row-fluid myyiiBorder" id="TopRow">
-	<div class="span6 myyiiBorder" id="RightColumn">
+	<div class="span5 myyiiBorder" id="RightColumn">
         <div class="row-fluid" id="Commertial">
-            <div class="myyiiBorder" id="Adds1">
+            <div class="myyiiBorder shadow" id="Adds1">
                 <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
             </div>	
         </div>    
             
         </div>
-	<div class="span6 myyiiBorder" id="LeftColumn">
+	<div class="span5 myyiiBorder shadow" id="LeftColumn">
             <div id="banner-fade">
                 <ul class="bjqs" dir="rtl">                
                     <?php
@@ -72,9 +71,10 @@ $cs->registerScript('helpers', '
         
     </div>
 
-    <div class="row-fluid myyiiBorder" id="BottomRow"> 
-        <img id="ynetLogo" src="<?php echo $baseurl.'/images/ynet_logo_new.gif'; ?>">
-        <ul id="news-ticker"></ul>    
+    <div class="row-fluid myyiiBorder shadow" id="BottomRow"> 
+        <img id="ynetLogo" src="<?php echo $baseurl.'/images/ynet_logo.png'; ?>">
+        <ul id="news-ticker">
+        </ul>    
     </div>
 </div>
 	
@@ -118,6 +118,5 @@ $cs->registerScript('helpers', '
         parseRSS('http://www.ynet.co.il/Integration/StoryRss2.xml', displayNewsTicker);
         // News Ticker Speed
         setInterval(function(){ tick ($('#news-ticker')) }, 10000);
-
     });	   
 </script>

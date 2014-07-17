@@ -39,10 +39,6 @@ $cs->registerScript('helpers', '
 ?>
 
 <div class="container-fluid" id="my-container-fluid">
-    <div class="row-fluid myyiiBorder" id="BottomRow"> 
-        <div class="span6"></div>
-        <div class="span6" id="address"><?php echo $screen->name.', '.$yeshuv ?></div>
-    </div>
     
     <div class="row-fluid myyiiBorder" id="TopRow">
 	<div class="span6 myyiiBorder" id="RightColumn">
@@ -53,6 +49,9 @@ $cs->registerScript('helpers', '
             </div>           
         </div>
 	<div class="span5 myyiiBorder" id="LeftColumn">
+            <div class="row-fluid myyiiBorder banner" id="BottomRow"> 
+                <div class="" id="address"><?php echo $screen->name.', '.$yeshuv ?></div>
+            </div>
             <div id="banner-fade">
                 <ul class="bjqs" dir="rtl">                
                     <?php
@@ -69,9 +68,12 @@ $cs->registerScript('helpers', '
     </div>
 
     <div class="row-fluid myyiiBorder" id="MiddleRow">
-        <div class="span2 myyiiBorder" id="retroclockbox1"></div>                
-        <div class="span4 myyiiBorder" id="weather"></div>
-        <div class="span6 myyiiBorder" id="YnetWidget">
+        <div class="span6 banner" id="timeWeather">
+            <div class="span4 myyiiBorder" id="retroclockbox1"></div>                
+            <div class="span7 myyiiBorder" id="weather"></div>
+        </div>
+        <div class="span6 myyiiBorder banner" id="YnetWidget">
+            <div id="ynetNewsScrollerTitle"><img src="/myyii/images/ynet_logo.png"></div>
             <div id="ynetNewsScroller" class="sagscroller"></div>
         </div>
     </div>
@@ -84,7 +86,7 @@ $cs->registerScript('helpers', '
         $('#banner-fade').bjqs({
             'showcontrols' : false,
             'animduration' : '1250', // how fast the animation are
-            'animspeed' : '6500', // the delay between each slide
+            'animspeed' : '20000', // the delay between each slide
             responsive : true
         });      
 
@@ -99,7 +101,7 @@ $cs->registerScript('helpers', '
                 time:function(){return new Date();}
         });
         
-        $('#weather').weatherfeed(['ISXX0026'],{
+        $('#weather').weatherfeed(['ISXX0017'],{
             unit: 'c',
             image: true,
             country: false,

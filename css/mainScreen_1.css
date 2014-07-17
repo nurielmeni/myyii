@@ -19,7 +19,7 @@ body
 {    
     width: auto;
     height: 100%;
-    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+    background: url(../images/Linen-Texture-600x428.jpg) repeat;
 
     //background: linear-gradient(to bottom, rgba(118,118,118,1) 0%,rgba(114,114,114,1) 50%,rgba(109,109,109,1) 51%,rgba(132,132,132,1) 100%);}
 
@@ -44,28 +44,37 @@ div#my-container-fluid
 
 div#TopRow
 {
-    height: 79%;
-    margin-top: 0.6%;
-    margin-bottom: 0.6%;
+    height: 70%;
+    width: 94%;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 div#Commertial, div#Adds1
 {
     height: 100%;
+    margin: 0 auto;
+}
+
+.shadow
+{
+    -webkit-box-shadow: 10px 10px 21px -4px rgba(17,16,61,1);
+    -moz-box-shadow: 10px 10px 21px -4px rgba(17,16,61,1);
+    box-shadow: 10px 10px 21px -4px rgba(17,16,61,1);
 }
 
 div#RightColumn
 {
-    border: 2px ridge #bcd1cf;
-    margin-left: 0.5em;
+   margin-left: 1%; 
 }
 
 div#LeftColumn
 {
     background-image: url(../images/cork-board-small.jpg);
     border: 10px ridge #ad7b16;
-    margin-left: 1.2em;
+    margin-left: 12%;
     margin-right: 0.5em;
+    height: 100%;
 }
 
 div#banner-fade
