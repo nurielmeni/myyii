@@ -73,7 +73,7 @@ $cs->registerScript('helpers', '
             <div class="span7 myyiiBorder" id="weather"></div>
         </div>
         <div class="span6 myyiiBorder banner" id="YnetWidget">
-            <div id="ynetNewsScrollerTitle"><img src="/myyii/images/ynet_logo.png"></div>
+            <div id="ynetNewsScrollerTitle"><img src="/myyii/images/Ynet.png"></div>
             <div id="ynetNewsScroller" class="sagscroller"></div>
         </div>
     </div>
@@ -84,6 +84,8 @@ $cs->registerScript('helpers', '
     $(document).ready(function() {
         // Billboard slider
         $('#banner-fade').bjqs({
+            'width' : 600,
+            'height' : 500,
             'showcontrols' : false,
             'animduration' : '1250', // how fast the animation are
             'animspeed' : '20000', // the delay between each slide

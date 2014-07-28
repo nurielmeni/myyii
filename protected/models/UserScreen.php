@@ -1,24 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "tbl_screen_ad_assignment".
+ * This is the model class for table "tbl_user_screen".
  *
- * The followings are the available columns in table 'tbl_screen_ad_assignment':
+ * The followings are the available columns in table 'tbl_user_screen':
+ * @property integer $user_id
  * @property integer $screen_id
- * @property integer $ad_id
- * @property string $create_time
- * @property integer $create_user_id
- * @property string $update_time
- * @property integer $update_user_id
  */
-class ScreenAdAssignment extends CActiveRecord
+class UserScreen extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'tbl_screen_ad_assignment';
+		return 'tbl_user_screen';
 	}
 
 	/**
@@ -29,12 +25,11 @@ class ScreenAdAssignment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('screen_id, ad_id', 'required'),
-			array('screen_id, ad_id, create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
-			array('create_time, update_time', 'safe'),
+			array('user_id, screen_id', 'required'),
+			array('user_id, screen_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('screen_id, ad_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
+			array('user_id, screen_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,7 +41,6 @@ class ScreenAdAssignment extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'screens' => array(self::HAS_MANY, 'Screen', 'id'),
 		);
 	}
 
@@ -56,12 +50,8 @@ class ScreenAdAssignment extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'screen_id' => 'מספר מסך',
-			'ad_id' => 'מספר פרסומת',
-			'create_time' => 'Create Time',
-			'create_user_id' => 'Create User',
-			'update_time' => 'Update Time',
-			'update_user_id' => 'Update User',
+			'user_id' => 'משתמש',
+			'screen_id' => 'מסך',
 		);
 	}
 
@@ -83,12 +73,8 @@ class ScreenAdAssignment extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('screen_id',$this->screen_id);
-		$criteria->compare('ad_id',$this->ad_id);
-		$criteria->compare('create_time',$this->create_time,true);
-		$criteria->compare('create_user_id',$this->create_user_id);
-		$criteria->compare('update_time',$this->update_time,true);
-		$criteria->compare('update_user_id',$this->update_user_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -99,7 +85,7 @@ class ScreenAdAssignment extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return ScreenAdAssignment the static model class
+	 * @return UserScreen the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

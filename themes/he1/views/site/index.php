@@ -83,6 +83,8 @@ $cs->registerScript('helpers', '
     $(document).ready(function() {
         // Billboard slider
         $('#banner-fade').bjqs({
+            'width' : 600,
+            'height' : 500,
             'showcontrols' : false,
             'animduration' : '1250', // how fast the animation are
             'animspeed' : '6500', // the delay between each slide

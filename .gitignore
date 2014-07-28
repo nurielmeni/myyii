@@ -164,3 +164,12 @@ pip-log.txt
 /nbproject/private/
 /myyii/nbproject/private/
 /assets/
+/protected/extensions/giix-components/
+/protected/extensions/giix-core/
+/protected/runtime/CSS/
+/protected/runtime/gii-1.1.15/
+/protected/runtime/gii-1.1.14/
+/protected/runtime/gii-1.1.13/
+/protected/runtime/gii-1.1.11/
+/protected/runtime/HTML/
+/protected/runtime/URI/

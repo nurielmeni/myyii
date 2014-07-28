@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content=<?php echo Yii::app()->language; ?> />
-	<meta http-equiv="refresh" content="1800">
+	<meta http-equiv="refresh" content="14400">
     
     <!-- Bootstrap -->
     <?php Yii::app()->clientScript->registerCoreScript('bootstrap'); ?>	

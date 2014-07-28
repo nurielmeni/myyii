@@ -26,4 +26,8 @@ $this->menu=array(
 		'username',
 		'last_login_time',		
 	),
-)); ?>
+)); 
+?>
+
+<?php echo $this->renderPartial('_form_screen', array('model'=>$model)); ?>
+

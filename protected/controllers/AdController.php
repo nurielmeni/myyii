@@ -36,7 +36,7 @@ class AdController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'assign'),
 				'users'=>array('nurielmeni'),
 			),
 			array('deny',  // deny all users
@@ -51,9 +51,18 @@ class AdController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+            $criteria = new CDbCriteria();            
+            $criteria->condition = 'ad_id=:id';
+            $criteria->params = array(':id'=>$id);
+            $dataProvider=new CActiveDataProvider('ScreenAdAssignment', array(
+                'criteria'  => $criteria,
+            ));
+            
+            $this->render('view',array(
+                'model'=>$this->loadModel($id),
+                'dataProvider'=>$dataProvider,
+            ));
+
 	}
 
 	/**
@@ -128,7 +137,7 @@ class AdController extends Controller
 		));
 	}
 
-	/**
+        /**
 	 * Manages all models.
 	 */
 	public function actionAdmin()
@@ -141,6 +150,14 @@ class AdController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+	}
+
+        /**
+	 * Assigns to this ad id a screen/screens.
+	 */
+	public function actionAssign($id)
+	{
+            $model = ScreenAdAssignment::model()->findAll(array("condition"=>"ad_id =  $id"));
 	}
 
 	/**

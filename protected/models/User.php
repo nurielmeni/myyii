@@ -51,9 +51,9 @@ class User extends BillboardActiveRecord
 			//array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
 			array('email', 'length', 'max'=>256),
 			array('username, password', 'length', 'max'=>128),
-            array('password', 'compare'),
-            array('email, username', 'unique'),
-            array('password_repeat', 'safe'),
+                        array('password', 'compare'),
+                        array('email, username', 'unique'),
+                        array('password_repeat', 'safe'),
 			//array('last_login_time, create_time, update_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -69,6 +69,7 @@ class User extends BillboardActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'screens' => array(self::MANY_MANY, 'Screen', 'tbl_user_screen(user_id, screen_id)'),
 		);
 	}
 

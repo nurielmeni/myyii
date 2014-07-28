@@ -22,6 +22,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		//'application.extensions.bootstrap.widgets.*',
+            	'ext.giix-components.*', // giix components
 	),
 
 	'modules'=>array(
@@ -32,9 +33,10 @@ return array(
 			'password'=>false,
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-			'generatorPaths'=>array(
-            	'bootstrap.gii',
-			),
+			'generatorPaths' => array(
+                            'ext.giix-core', // giix generators
+                        ),
+
 		),
 		
 	),
@@ -52,14 +54,14 @@ return array(
 		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-            'showScriptName'=>false,
+                        'showScriptName'=>false,
  			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),         
 		),		 
-         */
+                */
         
         /*
 		'db'=>array(
@@ -81,19 +83,16 @@ return array(
 			'errorAction'=>'site/error',
 		),
 		'log'=>array(
-			'class'=>'CLogRouter',
-			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
-				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
-			),
+                    'class'=>'CLogRouter',
+                    'routes'=>array(
+                        array(
+                            'class'=>'CFileLogRoute',
+                            'levels'=>'error, warning',
+                        ),
+                        array(
+                            'class'=>'CWebLogRoute',
+                        ),
+                    ),
 		),
 	),
 

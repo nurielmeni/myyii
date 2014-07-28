@@ -69,7 +69,8 @@ class Screen extends BillboardActiveRecord
             return array(
                 'client' => array(self::BELONGS_TO, 'Client', 'client_id'),
                 'monitor' => array(self::BELONGS_TO, 'Monitor', 'monitor_id'),
-                'ads' => array(self::MANY_MANY, 'Ad', 'tbl_screen_ad_assignment(screen_id, ad_id)'),
+                'ads' => array(self::MANY_MANY, 'Ad', 'tbl_screen_ad_assignment(screen_id, ad_id)'),                
+		'users' => array(self::MANY_MANY, 'User', 'tbl_user_screen(screen_id, user_id)'),		
             );
 	}
 
