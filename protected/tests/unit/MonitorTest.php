@@ -1,5 +1,5 @@
 <?php
-class ScreenTest extends CDbTestCase
+class MonitorTest extends CDbTestCase
 {
     public $fixtures=array
     (

@@ -27,24 +27,38 @@ class SiteController extends Controller
 		);
 	}
 
+        private function isweekend()
+        {
+            $day = intval(date('w'));
+            $hour = intval(date('G'));
+            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 19) || ($day == 3 and $hour < 19));
+        }
+
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionIndex()
 	{
-            $screen_id = Yii::app()->request->getParam('ID',1);
-            $screen = Screen::model()->findByPk($screen_id);
-            $ads = $screen->ads;
-            $yeshuv = $screen->getYeshuv();
-            //$dataProvider = new CActiveDataProvider('Ad');
-            $this->render('index', array(
-                'ads'=>$ads,
-                'screen'=>$screen,
-                'yeshuv'=>$yeshuv,
-            ));
+            if ($this->isweekend())
+            {
+                $this->redirect(array('/site/page', 'view'=>'weekend'));
+            }
+            else
+            {
+                $screen_id = Yii::app()->request->getParam('ID',1);
+                $screen = Screen::model()->findByPk($screen_id);
+                $ads = $screen->ads;
+                $yeshuv = $screen->getYeshuv();
+                //$dataProvider = new CActiveDataProvider('Ad');
+                $this->render('index', array(
+                    'ads'=>$ads,
+                    'screen'=>$screen,
+                    'yeshuv'=>$yeshuv,
+                ));
+            }
 	}
-
+        
 	/**
 	 * This is the action to handle external exceptions.
 	 */
