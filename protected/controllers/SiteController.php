@@ -31,7 +31,7 @@ class SiteController extends Controller
         {
             $day = intval(date('w'));
             $hour = intval(date('G'));
-            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 19) || ($day == 3 and $hour < 19));
+            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 19));
         }
 
 	/**
