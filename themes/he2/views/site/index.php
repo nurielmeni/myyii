@@ -44,11 +44,11 @@ $cs->registerScript('helpers', '
 	<div class="span6 myyiiBorder" id="RightColumn">
             <div class="row-fluid" id="Commertial">
                 <div class="myyiiBorder" id="Adds1">
-                    <iframe id="html138c0b817249c26f1f31676035baa326e40309acb302" src="banner/138c0b817249c26f1f31676035baa326e40309acb302/138c0b817249c26f1f31676035baa326e40309acb302.html" width="100%" height="878" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
+                    <iframe id="banner" src="banner/nymedia/nymedia/nymedia.html" width="100%" height="500" frameborder="0" scrolling="no" allowTransparency="true"></iframe>
                 </div>	
             </div>           
         </div>
-	<div class="span5 myyiiBorder" id="LeftColumn">
+	<div class="span6 myyiiBorder" id="LeftColumn">
             <div class="row-fluid myyiiBorder banner" id="BottomRow"> 
                 <div class="" id="address"><?php echo $screen->name.', '.$yeshuv ?></div>
             </div>
