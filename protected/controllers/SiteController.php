@@ -7,6 +7,7 @@ class SiteController extends Controller
 	 * using one-column layout. See 'protected/views/layouts/column1.php'.
 	 */
 	public $layout='//layouts/column1';
+        public $screen_id = 0;
 	
 	/**
 	 * Declares class-based actions.
@@ -46,8 +47,8 @@ class SiteController extends Controller
             }
             else
             {
-                $screen_id = Yii::app()->request->getParam('ID',1);
-                $screen = Screen::model()->findByPk($screen_id);
+                $this->screen_id = Yii::app()->request->getParam('ID',1);
+                $screen = Screen::model()->findByPk($this->screen_id);
                 $ads = $screen->ads;
                 $yeshuv = $screen->getYeshuv();
                 //$dataProvider = new CActiveDataProvider('Ad');
