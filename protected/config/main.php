@@ -10,7 +10,6 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'לוח מודעות ממוחשב לבנייני מגורים ומשרדים',
-	
 	'language'=>'he',
 	'theme'=>'he2',
 
@@ -101,5 +100,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+                'screen_id'=>'0',
 	),
 );

@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content=<?php echo Yii::app()->language; ?> />
-	<meta http-equiv="refresh" content="14400">
+        <meta http-equiv="refresh" content="9000; URL=<?php echo YII::app()->createAbsoluteUrl('site/index', array('ID'=>$_GET['screen_id'])); ?>">
     
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>

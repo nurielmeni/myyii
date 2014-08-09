@@ -32,7 +32,7 @@ class SiteController extends Controller
         {
             $day = intval(date('w'));
             $hour = intval(date('G'));
-            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 19));
+            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 23));
         }
 
 	/**
@@ -41,13 +41,14 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+            $this->screen_id = Yii::app()->request->getParam('ID',1);
             if ($this->isweekend())
             {
-                $this->redirect(array('/site/page', 'view'=>'weekend'));
+                Yii::app()->params['screen_id'] = $this->screen_id;
+                $this->redirect(array('/site/page', 'view'=>'weekend', 'screen_id'=>$this->screen_id));
             }
             else
-            {
-                $this->screen_id = Yii::app()->request->getParam('ID',1);
+            {                
                 $screen = Screen::model()->findByPk($this->screen_id);
                 $ads = $screen->ads;
                 $yeshuv = $screen->getYeshuv();
