@@ -44,7 +44,6 @@ class SiteController extends Controller
             $this->screen_id = Yii::app()->request->getParam('ID',1);
             if ($this->isweekend())
             {
-                Yii::app()->params['screen_id'] = $this->screen_id;
                 $this->redirect(array('/site/page', 'view'=>'weekend', 'screen_id'=>$this->screen_id));
             }
             else
