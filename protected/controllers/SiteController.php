@@ -30,9 +30,10 @@ class SiteController extends Controller
 
         private function isweekend()
         {
-            $day = intval(date('w'));
-            $hour = intval(date('G'));
-            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 23));
+            return false;
+//            $day = intval(date('w'));
+//            $hour = intval(date('G'));
+//            return (($day == 5 and $hour > 15) || ($day == 6 and $hour < 23));
         }
 
 	/**
